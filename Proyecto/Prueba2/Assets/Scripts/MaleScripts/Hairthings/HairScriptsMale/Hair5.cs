@@ -11,7 +11,6 @@ public class Hair5 : MonoBehaviour
        if(H5!= null)
       {
           bool isActive= H5.activeSelf;
-
           H5.SetActive(!isActive);
       }
   }
