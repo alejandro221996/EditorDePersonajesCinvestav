@@ -302,7 +302,6 @@ GameObject:
   m_Component:
   - component: {fileID: 186182485}
   - component: {fileID: 186182489}
-  - component: {fileID: 186182488}
   - component: {fileID: 186182487}
   - component: {fileID: 186182486}
   m_Layer: 5
@@ -373,7 +372,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 186182488}
+      - m_Target: {fileID: 0}
         m_MethodName: ShowA2
         m_Mode: 1
         m_Arguments:
@@ -411,19 +410,6 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
---- !u!114 &186182488
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 186182484}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0d426262423c1b42a6ed791df251074, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  A2: {fileID: 388924982}
 --- !u!222 &186182489
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -740,7 +726,6 @@ GameObject:
   m_Component:
   - component: {fileID: 360284217}
   - component: {fileID: 360284221}
-  - component: {fileID: 360284220}
   - component: {fileID: 360284219}
   - component: {fileID: 360284218}
   m_Layer: 5
@@ -811,7 +796,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 360284220}
+      - m_Target: {fileID: 0}
         m_MethodName: ShowA1
         m_Mode: 1
         m_Arguments:
@@ -849,19 +834,6 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
---- !u!114 &360284220
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 360284216}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c89e578df0d2a9f44816377be5a48a63, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  A1: {fileID: 369575855}
 --- !u!222 &360284221
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2509,7 +2481,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1062396952}
   - component: {fileID: 1062396956}
-  - component: {fileID: 1062396955}
   - component: {fileID: 1062396954}
   - component: {fileID: 1062396953}
   m_Layer: 5
@@ -2580,7 +2551,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1062396955}
+      - m_Target: {fileID: 0}
         m_MethodName: ShowA3
         m_Mode: 1
         m_Arguments:
@@ -2618,19 +2589,6 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
---- !u!114 &1062396955
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1062396951}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86bab2f5dbcd3ea47af7d23d1e6af371, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  A3: {fileID: 1037877544}
 --- !u!222 &1062396956
 CanvasRenderer:
   m_ObjectHideFlags: 0
