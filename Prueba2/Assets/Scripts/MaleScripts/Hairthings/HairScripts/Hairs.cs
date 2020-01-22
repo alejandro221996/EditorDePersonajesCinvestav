@@ -14,6 +14,7 @@ public class Hairs : MonoBehaviour
             {
                 item.SetActive(true);
                 item.transform.position = StartPosition;
+               // Time.deltaTime.
           
             }
 
