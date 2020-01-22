@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SelectGenderMale : MonoBehaviour
+public class SelectedGenderMale : MonoBehaviour
 {
    public GameObject Male;
 

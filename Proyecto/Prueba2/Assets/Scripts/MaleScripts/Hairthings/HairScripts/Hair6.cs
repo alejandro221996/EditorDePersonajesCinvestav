@@ -2,17 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Hair7 : MonoBehaviour
+public class Hair6 : MonoBehaviour
 {
-  public GameObject H7;
+  public GameObject H6;
 
-  public void ShowH7()
+  public void ShowH6()
   {
-       if(H7!= null)
+       if(H6!= null)
       {
-          bool isActive= H7.activeSelf;
+          bool isActive= H6.activeSelf;
 
-          H7.SetActive(!isActive);
+          H6.SetActive(!isActive);
       }
   }
 }
