@@ -10,28 +10,18 @@ public class SelectGender : MonoBehaviour
     public GameObject SelectFemale;
 
 
-    public void ShowAvatar()
+    public void ShowAvatar(int Actual)
     {
-        if (SelectMale.activeInHierarchy==false && SelectFemale.activeInHierarchy == false)
+        if (Actual == 1)//--------------------------1=Male
         {
-            Male.SetActive(false);
+            Male.SetActive(true);
             Female.SetActive(false);
-            Debug.Log("Entro al primer caso");
         }
-       if(SelectMale.activeInHierarchy == true)
-            {
-
-           
-                Male.SetActive(true);
-                Debug.Log("Entro al segundo caso");
-            Debug.Log(SelectFemale);
-        }
-        else
+        if(Actual==2)//---------------------2=Female
         {
-     
-                Female.SetActive(true);
-                Debug.Log("Entro al tercer caso");
-            Debug.Log(SelectFemale);
+            Female.SetActive(true);
+            Male.SetActive(false);
+           
         }
     }
 }
