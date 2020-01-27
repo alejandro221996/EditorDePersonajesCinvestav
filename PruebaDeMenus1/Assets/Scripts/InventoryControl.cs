@@ -10,6 +10,8 @@ public class InventoryControl : MonoBehaviour
     [SerializeField]
     private GridLayoutGroup gridGroup;
     [SerializeField]
+    private GridLayoutGroup HorizontalGroup;
+    [SerializeField]
     private Sprite[] iconSprites;
 
     void Start()
@@ -23,6 +25,7 @@ public class InventoryControl : MonoBehaviour
             playerInventory.Add(newItem);
         }
         GenInventory();
+        //GenInventoryH();
        
     }
 
@@ -48,7 +51,29 @@ public class InventoryControl : MonoBehaviour
             newButton.transform.SetParent(buttonTemplate.transform.parent, false);
         }
     }
- public class PlayerItem
+   /* void GenInventoryH()
+    {
+        if (playerInventory.Count < 5)
+        {
+            HorizontalGroup.constraintCount = playerInventory.Count;
+
+        }
+        else
+        {
+            HorizontalGroup.constraintCount = 1;
+        }
+
+        foreach (PlayerItem newItem in playerInventory)
+        {
+
+            GameObject newButton = Instantiate(buttonTemplate) as GameObject;
+            newButton.SetActive(true);
+
+            newButton.GetComponent<InventoryButton>().SetIcon(newItem.iconSprite);
+            newButton.transform.SetParent(buttonTemplate.transform.parent, false);
+        }
+    }*/
+    public class PlayerItem
     {
         public Sprite iconSprite;
     }
