@@ -14,6 +14,12 @@ TextureImporter:
     21300018: Hair07_9
     21300020: Hair07_10
     21300022: Hair07_11
+    21300024: Hair07_12
+    21300026: Hair07_13
+    21300028: Hair07_14
+    21300030: Hair07_15
+    21300032: Hair07_16
+    21300034: Hair07_17
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -110,10 +116,10 @@ TextureImporter:
       name: Hair07_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 170
-        width: 21
-        height: 21
+        x: 0
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,7 +127,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 62ac425993df8954f99ce4e87d1f446c
+      spriteID: 9f67d5ee550aac44db81e550e2feac0e
       vertices: []
       indices: 
       edges: []
@@ -130,10 +136,10 @@ TextureImporter:
       name: Hair07_1
       rect:
         serializedVersion: 2
-        x: 37
-        y: 162
-        width: 21
-        height: 30
+        x: 32
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,7 +147,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f7f6f4c6f2d00964e8524e1e9d53d80b
+      spriteID: 587a210d8a746b848999482b0bbf5439
       vertices: []
       indices: 
       edges: []
@@ -150,10 +156,10 @@ TextureImporter:
       name: Hair07_2
       rect:
         serializedVersion: 2
-        x: 86
-        y: 162
-        width: 7
-        height: 15
+        x: 64
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -161,7 +167,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 78906b4d9c8a5b148801b41c8099fc89
+      spriteID: a837e13bee0b0e34db93bd97a0874498
       vertices: []
       indices: 
       edges: []
@@ -170,10 +176,10 @@ TextureImporter:
       name: Hair07_3
       rect:
         serializedVersion: 2
-        x: 5
-        y: 115
-        width: 21
-        height: 28
+        x: 0
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,7 +187,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0f8e3a97c49eef0459c8bd14280a15a5
+      spriteID: 5e1c4a255873e244e9199e33f22ca320
       vertices: []
       indices: 
       edges: []
@@ -190,10 +196,10 @@ TextureImporter:
       name: Hair07_4
       rect:
         serializedVersion: 2
-        x: 38
-        y: 111
-        width: 22
-        height: 33
+        x: 32
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -201,7 +207,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8991f7280683dcc45b4c3af0012d35c6
+      spriteID: 6374d9d2eec1e0442b416d9d86b89db0
       vertices: []
       indices: 
       edges: []
@@ -210,10 +216,10 @@ TextureImporter:
       name: Hair07_5
       rect:
         serializedVersion: 2
-        x: 69
-        y: 113
-        width: 25
-        height: 30
+        x: 64
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,7 +227,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8de430cd45fd9bd44816bbacaa9e498a
+      spriteID: e988568e0ae848f4bb0bdeba8b8d7386
       vertices: []
       indices: 
       edges: []
@@ -230,10 +236,10 @@ TextureImporter:
       name: Hair07_6
       rect:
         serializedVersion: 2
-        x: 6
-        y: 67
-        width: 21
-        height: 28
+        x: 0
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -241,7 +247,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e861e571de5f714a884b01d4f729160
+      spriteID: 827deba57b728dd4da15e07f7c99ec84
       vertices: []
       indices: 
       edges: []
@@ -250,10 +256,10 @@ TextureImporter:
       name: Hair07_7
       rect:
         serializedVersion: 2
-        x: 36
-        y: 63
-        width: 22
-        height: 33
+        x: 32
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -261,7 +267,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 378844c39cf11044eab69c05fa9bceeb
+      spriteID: 15c198fc1c27c2b40a7e83746754e81b
       vertices: []
       indices: 
       edges: []
@@ -270,10 +276,10 @@ TextureImporter:
       name: Hair07_8
       rect:
         serializedVersion: 2
-        x: 66
-        y: 65
-        width: 25
-        height: 30
+        x: 64
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -281,7 +287,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e647eaddf4374e14da02912b253c6f9f
+      spriteID: 16455eab7fd18ad40bf0d7bdee76afc0
       vertices: []
       indices: 
       edges: []
@@ -290,9 +296,9 @@ TextureImporter:
       name: Hair07_9
       rect:
         serializedVersion: 2
-        x: 4
-        y: 15
-        width: 22
+        x: 0
+        y: 64
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -301,7 +307,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d9064d1e917c79743bbd0060c1737215
+      spriteID: 9d26b7c984576e7408158c1c5daf329a
       vertices: []
       indices: 
       edges: []
@@ -310,29 +316,9 @@ TextureImporter:
       name: Hair07_10
       rect:
         serializedVersion: 2
-        x: 37
-        y: 15
-        width: 21
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 701e1717e527875409a4415c16ef72ab
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Hair07_11
-      rect:
-        serializedVersion: 2
-        x: 69
-        y: 15
-        width: 22
+        x: 32
+        y: 64
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -341,7 +327,147 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ff5cd0c013e3c54581de7047d8db452
+      spriteID: e1eb02faf4f67074ebff6e34799c9c38
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hair07_11
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b669a103e55ac404ea79f946a62b83b7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hair07_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6505452217597b94382f5d9bd9e215d0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hair07_13
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3e2f8881d32a114fbecab08a70ec155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hair07_14
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6ff265d138ad9d4e9ac9b3fd630efd5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hair07_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34df028129fe1504fb7f91de62eec0a9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hair07_16
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ca499d45e6bdc347a77a857cc2c1aa3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hair07_17
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dce77f65ca19910448de2ffcf0cedaae
       vertices: []
       indices: 
       edges: []
