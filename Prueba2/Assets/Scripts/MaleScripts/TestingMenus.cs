@@ -36,137 +36,83 @@ public class TestingMenus : MonoBehaviour
 
     public void MostrarMenu(int MenuSelected)
     {
-        if (MenuSelected == 1)//--------------------------1=Male
-        { 
-            HairMenu.SetActive(true);
-            AccesoriesHMenu.SetActive(true);
-            //-----HEADHIDE
-            EyesMenu.SetActive(false);
-            EarsMenu.SetActive(false);
-            HelmetMenu.SetActive(false);
-            FacialHairMenu.SetActive(false);
-            HeadAccesories.SetActive(false);
-            HatMenu.SetActive(false);
-         
-            //-----BODYHIDE
-            ArmorMenu.SetActive(false);
-            TopMenu.SetActive(false);
-            OuterMenu.SetActive(false);
-            AccesoriesMenu.SetActive(false);
-            //-----LEGSHIDE
-            UpperArmorMenu.SetActive(false);
-            BootsMenu.SetActive(false);
-            PantsMenu.SetActive(false);
-            BeltMenu.SetActive(false);
-            //-----ARMHIDE
-            GauntletsMenu.SetActive(false);
-            ShouldersMenu.SetActive(false);
-        }
-
-        if (MenuSelected == 2)//---------------------2=Female
+        switch (MenuSelected)
         {
-            EyesMenu.SetActive(true);
-            EarsMenu.SetActive(true);
-            HelmetMenu.SetActive(true);
-            FacialHairMenu.SetActive(true);
-            HeadAccesories.SetActive(true);
-            HatMenu.SetActive(true);
-            //-----HAIRHIDE
-            HairMenu.SetActive(false);
-            AccesoriesHMenu.SetActive(false);
-            //-----BODYHIDE
-            ArmorMenu.SetActive(false);
-            TopMenu.SetActive(false);
-            OuterMenu.SetActive(false);
-            AccesoriesMenu.SetActive(false);
-            //-----LEGSHIDE
-            UpperArmorMenu.SetActive(false);
-            BootsMenu.SetActive(false);
-            PantsMenu.SetActive(false);
-            BeltMenu.SetActive(false);
-            //-----ARMHIDE
-            GauntletsMenu.SetActive(false);
-            ShouldersMenu.SetActive(false);
+            case 1://--------------------------1=Male
 
-        }
-        if(MenuSelected==3)
-        {
-            ArmorMenu.SetActive(true);
-            TopMenu.SetActive(true);
-            OuterMenu.SetActive(true);
-            AccesoriesMenu.SetActive(true);
-            //------HEADHIDE
-            EyesMenu.SetActive(false);
-            EarsMenu.SetActive(false);
-            HelmetMenu.SetActive(false);
-            FacialHairMenu.SetActive(false);
-            HeadAccesories.SetActive(false);
-            HatMenu.SetActive(false);
-            //-----LEGSHIDE
-            UpperArmorMenu.SetActive(false);
-            BootsMenu.SetActive(false);
-            PantsMenu.SetActive(false);
-            BeltMenu.SetActive(false);
-            //-----ARMHIDE
-            GauntletsMenu.SetActive(false);
-            ShouldersMenu.SetActive(false);
-            //-----HAIRHIDE
-            HairMenu.SetActive(false);
-            AccesoriesHMenu.SetActive(false);
+                HideMenus();
+                HairMenu.SetActive(true);
+                AccesoriesHMenu.SetActive(true);
+
+                break;
+
+            case 2://---------------------2=Female
+
+                HideMenus();
+                EyesMenu.SetActive(true);
+                EarsMenu.SetActive(true);
+                HelmetMenu.SetActive(true);
+                FacialHairMenu.SetActive(true);
+                HeadAccesories.SetActive(true);
+                HatMenu.SetActive(true);
+
+
+                break;
+            case 3:
+
+                HideMenus();
+                ArmorMenu.SetActive(true);
+                TopMenu.SetActive(true);
+                OuterMenu.SetActive(true);
+                AccesoriesMenu.SetActive(true);
+                break;
+            case 4:
+
+                HideMenus();
+                GauntletsMenu.SetActive(true);
+                ShouldersMenu.SetActive(true);
+                //-----HAIRHIDE
+
+                break;
+            case 5:
+
+                HideMenus();
+                UpperArmorMenu.SetActive(true);
+                BootsMenu.SetActive(true);
+                PantsMenu.SetActive(true);
+                BeltMenu.SetActive(true);
+
+                break;
+            default:
+                break;
+
 
         }
-        if (MenuSelected==4)
-        {
-            
-            GauntletsMenu.SetActive(true);
-            ShouldersMenu.SetActive(true);
-            //-----HAIRHIDE
-            HairMenu.SetActive(false);
-            AccesoriesHMenu.SetActive(false);
-            //-----BODYHIDE
-            ArmorMenu.SetActive(false);
-            TopMenu.SetActive(false);
-            OuterMenu.SetActive(false);
-            AccesoriesMenu.SetActive(false);
-            //-----LEGSHIDE
-            UpperArmorMenu.SetActive(false);
-            BootsMenu.SetActive(false);
-            PantsMenu.SetActive(false);
-            BeltMenu.SetActive(false);
-            //------HEADHIDE
-            EyesMenu.SetActive(false);
-            EarsMenu.SetActive(false);
-            HelmetMenu.SetActive(false);
-            FacialHairMenu.SetActive(false);
-            HeadAccesories.SetActive(false);
-            HatMenu.SetActive(false);
-        }
-        if(MenuSelected==5)
-        {
-            UpperArmorMenu.SetActive(true);
-            BootsMenu.SetActive(true);
-            PantsMenu.SetActive(true);
-            BeltMenu.SetActive(true);
-            //-----HAIRHIDE
-            HairMenu.SetActive(false);
-            AccesoriesHMenu.SetActive(false);
-            //-----BODYHIDE
-            ArmorMenu.SetActive(false);
-            TopMenu.SetActive(false);
-            OuterMenu.SetActive(false);
-            AccesoriesMenu.SetActive(false);
-            //------HEADHIDE
-            EyesMenu.SetActive(false);
-            EarsMenu.SetActive(false);
-            HelmetMenu.SetActive(false);
-            FacialHairMenu.SetActive(false);
-            HeadAccesories.SetActive(false);
-            HatMenu.SetActive(false);
-            //-----ARMHIDE
-            GauntletsMenu.SetActive(false);
-            ShouldersMenu.SetActive(false);
-
-        }
-        Debug.Log(MenuSelected);
     }
-}
+        public void HideMenus()
+    {
+        UpperArmorMenu.SetActive(false);
+        BootsMenu.SetActive(false);
+        PantsMenu.SetActive(false);
+        BeltMenu.SetActive(false);
+        //-----HAIRHIDE
+        HairMenu.SetActive(false);
+        AccesoriesHMenu.SetActive(false);
+        //-----BODYHIDE
+        ArmorMenu.SetActive(false);
+        TopMenu.SetActive(false);
+        OuterMenu.SetActive(false);
+        AccesoriesMenu.SetActive(false);
+        //------HEADHIDE
+        EyesMenu.SetActive(false);
+        EarsMenu.SetActive(false);
+        HelmetMenu.SetActive(false);
+        FacialHairMenu.SetActive(false);
+        HeadAccesories.SetActive(false);
+        HatMenu.SetActive(false);
+        //-----ARMHIDE
+        GauntletsMenu.SetActive(false);
+        ShouldersMenu.SetActive(false);
+    }
+    }
+
