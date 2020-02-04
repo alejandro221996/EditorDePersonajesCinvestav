@@ -17,6 +17,7 @@ public class TestingMenus : MonoBehaviour
     public GameObject TopMenu;
     public GameObject OuterMenu;
     public GameObject AccesoriesMenu;
+    public GameObject WingMenu;
     
     //public GameObject BodyButton;
     public GameObject HairMenu;
@@ -65,6 +66,7 @@ public class TestingMenus : MonoBehaviour
                 TopMenu.SetActive(true);
                 OuterMenu.SetActive(true);
                 AccesoriesMenu.SetActive(true);
+                WingMenu.SetActive(true);
                 break;
             case 4:
 
@@ -103,6 +105,7 @@ public class TestingMenus : MonoBehaviour
         TopMenu.SetActive(false);
         OuterMenu.SetActive(false);
         AccesoriesMenu.SetActive(false);
+        WingMenu.SetActive(false);
         //------HEADHIDE
         EyesMenu.SetActive(false);
         EarsMenu.SetActive(false);
