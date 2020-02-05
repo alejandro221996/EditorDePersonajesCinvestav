@@ -13,6 +13,11 @@ public class SelectGender : MonoBehaviour
     public GameObject MaleBodyButton;
     public GameObject MaleLegsButton;
     public GameObject MaleArmsButton;
+    public GameObject FemaHairButton;
+    public GameObject FemaHeadButton;
+    public GameObject FemaBodyButton;
+    public GameObject FemaLegsButton;
+    public GameObject FemaArmsButton;
 
 
     public void ShowAvatar(int Actual)
@@ -33,7 +38,11 @@ public class SelectGender : MonoBehaviour
             Female.SetActive(true);
             Male.SetActive(false);
             HideMaleControls();
-
+            FemaHairButton.SetActive(true);
+            FemaHeadButton.SetActive(true);
+            FemaLegsButton.SetActive(true);
+            FemaArmsButton.SetActive(true);
+            FemaBodyButton.SetActive(true);
 
         }
         
@@ -46,4 +55,13 @@ public class SelectGender : MonoBehaviour
         MaleArmsButton.SetActive(false);
         MaleBodyButton.SetActive(false);
     }
+    public void HideFemaControls()
+    {
+        FemaHairButton.SetActive(false);
+        FemaHeadButton.SetActive(false);
+        FemaLegsButton.SetActive(false);
+        FemaArmsButton.SetActive(false);
+        FemaBodyButton.SetActive(false);
+    }
+
 }
