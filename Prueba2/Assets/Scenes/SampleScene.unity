@@ -9843,6 +9843,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5eab8593b5db66b4f95a7c692d753b8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FinalAvatar: {fileID: 0}
 --- !u!114 &176530993
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53598,7 +53599,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1000509130}
-  - component: {fileID: 1000509133}
   - component: {fileID: 1000509132}
   - component: {fileID: 1000509131}
   - component: {fileID: 1000509134}
@@ -53671,32 +53671,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1000509129}
   m_CullTransparentMesh: 0
---- !u!114 &1000509133
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000509129}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 032e93ae641c6dd47875bcaec622c5db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Male: {fileID: 1000509129}
-  Female: {fileID: 143171266}
-  SelectMale: {fileID: 1428787523}
-  SelectFemale: {fileID: 795687088}
-  MaleHairButton: {fileID: 0}
-  MaleHeadButton: {fileID: 0}
-  MaleBodyButton: {fileID: 0}
-  MaleLegsButton: {fileID: 0}
-  MaleArmsButton: {fileID: 0}
-  FemaHairButton: {fileID: 0}
-  FemaHeadButton: {fileID: 0}
-  FemaBodyButton: {fileID: 0}
-  FemaLegsButton: {fileID: 0}
-  FemaArmsButton: {fileID: 0}
 --- !u!95 &1000509134
 Animator:
   serializedVersion: 3

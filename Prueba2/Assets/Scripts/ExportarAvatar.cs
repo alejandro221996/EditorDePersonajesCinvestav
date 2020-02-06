@@ -5,16 +5,24 @@ using UnityEngine.UI;
 
 public class ExportarAvatar : MonoBehaviour
 {
-
+    public Texture FinalAvatar;
     public void Export()
     {
+       
         //Image[] Texturas;
         Image[] Texturas = GetComponentsInChildren<Image>();
-       foreach (Image CurrentTexture in Texturas)
+        FinalAvatar = new Texture2D (96,192);
+       for (int i =0;i<Texturas.Length;i++)
             {
-            Debug.Log(CurrentTexture.gameObject.name);
+            Texture CurrentTexture = Texturas[i].sprite.texture;
+            Debug.Log(CurrentTexture.width);
+            Debug.Log(CurrentTexture.height);
+           
+            //Debug.Log(CurrentTexture.gameObject.name);
+            
+            Graphics.CopyTexture(CurrentTexture, 0, 0, 0, 0, CurrentTexture.width, CurrentTexture.height, FinalAvatar, 0, 0, 0, 0);
         }
-        
+       
         
         
         
