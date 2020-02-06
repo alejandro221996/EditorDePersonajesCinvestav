@@ -9,7 +9,7 @@ public class PuttingBelts : MonoBehaviour
     public void PutBelts(int BeltSelected)
 
     {
-        switch(BeltSelected)
+        switch (BeltSelected)
         {
             case 1:
                 Belt1.SetActive(true);
@@ -17,6 +17,11 @@ public class PuttingBelts : MonoBehaviour
             default:
                 break;
         }
+    }
+    public void HideBelt()
+        {
+            Belt1.SetActive(false);
+        }
 
     }
-}
+

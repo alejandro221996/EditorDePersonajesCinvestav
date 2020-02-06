@@ -24,6 +24,7 @@ public class SelectGender : MonoBehaviour
     {
         if (Actual == 1)//--------------------------1=Male
         {
+            HideFemaControls();
             Male.SetActive(true);
             Female.SetActive(false);
             MaleHairButton.SetActive(true);
