@@ -9802,7 +9802,6 @@ GameObject:
   - component: {fileID: 176530995}
   - component: {fileID: 176530994}
   - component: {fileID: 176530993}
-  - component: {fileID: 176530992}
   m_Layer: 5
   m_Name: ExportingButton
   m_TagString: Untagged
@@ -9831,19 +9830,6 @@ RectTransform:
   m_AnchoredPosition: {x: 277.2, y: 188}
   m_SizeDelta: {x: 160, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &176530992
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 176530990}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5eab8593b5db66b4f95a7c692d753b8e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FinalAvatar: {fileID: 0}
 --- !u!114 &176530993
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9884,7 +9870,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 176530992}
+      - m_Target: {fileID: 1875963642}
         m_MethodName: Export
         m_Mode: 1
         m_Arguments:
@@ -102527,6 +102513,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1875963641}
   - component: {fileID: 1875963643}
+  - component: {fileID: 1875963642}
   m_Layer: 5
   m_Name: Avatar
   m_TagString: Untagged
@@ -102555,6 +102542,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -211.7}
   m_SizeDelta: {x: 170, y: 272}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1875963642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1875963640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5eab8593b5db66b4f95a7c692d753b8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FinalAvatar: {fileID: 0}
 --- !u!222 &1875963643
 CanvasRenderer:
   m_ObjectHideFlags: 0
