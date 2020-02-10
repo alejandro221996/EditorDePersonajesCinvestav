@@ -11,16 +11,18 @@ public class ExportarAvatar : MonoBehaviour
        
         //Image[] Texturas;
         Image[] Texturas = GetComponentsInChildren<Image>();
-        FinalAvatar = new Texture2D (96,192);
+        FinalAvatar = new Texture2D (96,192,TextureFormat.DXT5,false);
        for (int i =0;i<Texturas.Length;i++)
             {
-            Texture CurrentTexture = Texturas[i].sprite.texture;
+          
+            Texture2D CurrentTexture = Texturas[i].sprite.texture;
+            Debug.Log(CurrentTexture.format);
             Debug.Log(CurrentTexture.width);
             Debug.Log(CurrentTexture.height);
-           
+
             //Debug.Log(CurrentTexture.gameObject.name);
-            
-            Graphics.CopyTexture(CurrentTexture, 0, 0, 0, 0, CurrentTexture.width, CurrentTexture.height, FinalAvatar, 0, 0, 0, 0);
+            Graphics.CopyTexture(CurrentTexture, FinalAvatar);
+           // Graphics.CopyTexture(CurrentTexture, 0, 0, 0, 0, CurrentTexture.width, CurrentTexture.height, FinalAvatar, 0, 0, 0, 0);
         }
        
         
