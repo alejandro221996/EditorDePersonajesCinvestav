@@ -1,12 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(SpriteRenderer))]
 public class SpriteMaker : MonoBehaviour
 {
     SpriteRenderer Render;
-   
+
     Texture2D tex;
     // Inicializar
     public void ExportarAvatar()
@@ -20,7 +21,16 @@ public class SpriteMaker : MonoBehaviour
 
     void MakeTexture()
     {
-        Texture2D[] layers = GetComponentsInChildren<Texture2D>();
+        Image[] Imagenes=GetComponentsInChildren<Image>();
+        Texture2D[] layers = new Texture2D[Imagenes.Length] ;
+        Debug.Log(Imagenes.Length);
+        for (int i = 0; i < Imagenes.Length; i++)
+        {
+           
+           layers[i] = Imagenes[i].sprite.texture;
+        }
+
+           
         tex = new Texture2D(layers[0].width, layers[0].height);
 
         //Arreglo para guardar el destino de los pixeles obtenidos
@@ -70,6 +80,8 @@ public class SpriteMaker : MonoBehaviour
 
         //Asignando el sprite para renderizar render.sprite
         Render.sprite = newSprite;
+    
+     
     }
     // Update is called once per frame
 
