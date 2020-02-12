@@ -4,46 +4,46 @@ using UnityEngine;
 
 public class PuttingFHats : MonoBehaviour
 {
-    public GameObject Hat1;
-    public GameObject Hat2;
-    public GameObject Hat3;
-    public GameObject Hat4;
-    public GameObject Hat5;
-    public GameObject Hat6;
-    public GameObject Hat7;
+    public GameObject FHat1;
+    public GameObject FHat2;
+    public GameObject FHat3;
+    public GameObject FHat4;
+    public GameObject FHat5;
+    public GameObject FHat6;
+    public GameObject FHat7;
 
-    public void PutHat(int HatSelected)
+    public void PutFHat(int FHatSelected)
     {
-        switch (HatSelected)
+        switch (FHatSelected)
         {
             case 1:
                 HideFHats();
-                Hat1.SetActive(true);
+                FHat1.SetActive(true);
 
                 break;
             case 2:
                 HideFHats();
-                Hat2.SetActive(true);
+                FHat2.SetActive(true);
                 break;
             case 3:
                 HideFHats();
-                Hat3.SetActive(true);
+                FHat3.SetActive(true);
                 break;
             case 4:
                 HideFHats();
-                Hat4.SetActive(true);
+                FHat4.SetActive(true);
                 break;
             case 5:
                 HideFHats();
-                Hat5.SetActive(true);
+                FHat5.SetActive(true);
                 break;
             case 6:
                 HideFHats();
-                Hat6.SetActive(true);
+                FHat6.SetActive(true);
                 break;
             case 7:
                 HideFHats();
-                Hat7.SetActive(true);
+                FHat7.SetActive(true);
                 break;
 
             default:
@@ -53,12 +53,12 @@ public class PuttingFHats : MonoBehaviour
     }
     public void HideFHats()
     {
-        Hat1.SetActive(false);
-        Hat2.SetActive(false);
-        Hat3.SetActive(false);
-        Hat4.SetActive(false);
-        Hat5.SetActive(false);
-        Hat6.SetActive(false);
-        Hat7.SetActive(false);
+        FHat1.SetActive(false);
+        FHat2.SetActive(false);
+        FHat3.SetActive(false);
+        FHat4.SetActive(false);
+        FHat5.SetActive(false);
+        FHat6.SetActive(false);
+        FHat7.SetActive(false);
     }
 }

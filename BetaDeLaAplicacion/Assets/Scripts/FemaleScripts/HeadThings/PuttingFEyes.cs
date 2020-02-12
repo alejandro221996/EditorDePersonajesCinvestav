@@ -4,66 +4,66 @@ using UnityEngine;
 
 public class PuttingFEyes : MonoBehaviour
 {
-    public GameObject Eyes1;
-    public GameObject Eyes2;
-    public GameObject Eyes3;
-    public GameObject Eyes4;
-    public GameObject Eyes5;
-    public GameObject Eyes6;
-    public GameObject Eyes7;
-    public GameObject Eyes8;
+    public GameObject FEyes1;
+    public GameObject FEyes2;
+    public GameObject FEyes3;
+    public GameObject FEyes4;
+    public GameObject FEyes5;
+    public GameObject FEyes6;
+    public GameObject FEyes7;
+    public GameObject FEyes8;
 
-    public void PutEyes(int EyesSelected)
+    public void PutFEyes(int FEyesSelected)
     {
-        switch (EyesSelected)
+        switch (FEyesSelected)
         {
             case 1:
-                HideEyes();
-                Eyes1.SetActive(true);
+                HideFEyes();
+                FEyes1.SetActive(true);
 
                 break;
             case 2:
-                HideEyes();
-                Eyes2.SetActive(true);
+                HideFEyes();
+                FEyes2.SetActive(true);
                 break;
             case 3:
-                HideEyes();
-                Eyes3.SetActive(true);
+                HideFEyes();
+                FEyes3.SetActive(true);
                 break;
             case 4:
-                HideEyes();
-                Eyes4.SetActive(true);
+                HideFEyes();
+                FEyes4.SetActive(true);
                 break;
             case 5:
-                HideEyes();
-                Eyes5.SetActive(true);
+                HideFEyes();
+                FEyes5.SetActive(true);
                 break;
             case 6:
-                HideEyes();
-                Eyes6.SetActive(true);
+                HideFEyes();
+                FEyes6.SetActive(true);
                 break;
             case 7:
-                HideEyes();
-                Eyes7.SetActive(true);
+                HideFEyes();
+                FEyes7.SetActive(true);
                 break;
             case 8:
-                HideEyes();
-                Eyes8.SetActive(true);
+                HideFEyes();
+                FEyes8.SetActive(true);
                 break;
             default:
                 break;
 
         }
     }
-    public void HideEyes()
+    public void HideFEyes()
     {
-        Eyes1.SetActive(false);
-        Eyes2.SetActive(false);
-        Eyes3.SetActive(false);
-        Eyes4.SetActive(false);
-        Eyes5.SetActive(false);
-        Eyes6.SetActive(false);
-        Eyes7.SetActive(false);
-        Eyes8.SetActive(false);
+        FEyes1.SetActive(false);
+        FEyes2.SetActive(false);
+        FEyes3.SetActive(false);
+        FEyes4.SetActive(false);
+        FEyes5.SetActive(false);
+        FEyes6.SetActive(false);
+        FEyes7.SetActive(false);
+        FEyes8.SetActive(false);
     }
 }
