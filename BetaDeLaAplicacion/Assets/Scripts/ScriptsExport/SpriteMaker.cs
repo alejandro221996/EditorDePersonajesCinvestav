@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System.IO;
+using System;
 
 [RequireComponent(typeof(SpriteRenderer))]
 public class SpriteMaker : MonoBehaviour
@@ -17,6 +19,7 @@ public class SpriteMaker : MonoBehaviour
         MakeTexture();
         //Creando un sprite usando esa textura
         MakeSprite();
+        Save();
     }
 
     void MakeTexture()
@@ -71,6 +74,16 @@ public class SpriteMaker : MonoBehaviour
         tex.wrapMode = TextureWrapMode.Clamp;
         tex.filterMode = FilterMode.Point;
 
+        var bytes = tex.EncodeToPNG();
+        var dirPath = Application.dataPath + "/../SaveImages/";
+        if (!Directory.Exists(dirPath))
+        {
+            Directory.CreateDirectory(dirPath);
+        }
+        var timeStamp = DateTime.Now.ToString("yyyyMMddHHssff");
+        File.WriteAllBytes(dirPath + "Image-" + timeStamp + ".png", bytes);
+
+
     }
     void MakeSprite()
     {
@@ -80,8 +93,13 @@ public class SpriteMaker : MonoBehaviour
 
         //Asignando el sprite para renderizar render.sprite
         Render.sprite = newSprite;
-    
-     
+
+       
+    }
+    void Save()
+    {
+        
+
     }
     // Update is called once per frame
 
