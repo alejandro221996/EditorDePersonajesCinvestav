@@ -19,14 +19,41 @@ public class AttribsMenu : MonoBehaviour
     public GameObject Message;
     public GameObject DiscardMenu;
     public GameObject ConfirmMenu;
+    //Aplicacion Web
+    [SerializeField]
+    private string BASE_URL = "https://docs.google.com/forms/u/1/d/e/1FAIpQLScE-G2H2f0qznIb0mmU8pRh8KuAi4-KvPqkEHpYXTSVOEk1mg/formResponse";
 
 
+    //Valores String de los Sliders
+    string SvalueString ;
+    string AvalueString ;
+    string HvalueString ;
+    string WvalueString ;
+    string IvalueString ;
+    string RValueString ;
+
+    //
+
+    //Valores Enteros De Los Sliders
     int Svalue = 0;
     int Avalue = 0;
     int Hvalue = 0;
     int Wvalue = 0;
     int Ivalue = 0;
     int RValue = 0;
+    IEnumerator Post(string strength, string agility, string health,string wisdom,string intelligence)
+    {
+        WWWForm form = new WWWForm();
+        form.AddField("entry.1657925407", strength);
+        form.AddField("entry.1584728741", agility);
+        form.AddField("entry.1210576219", health);
+        form.AddField("entry.1986338539", wisdom);
+        form.AddField("")
+        byte[] rawData = form.data;
+        WWW www = new WWW(BASE_URL, rawData);
+        yield return www;
+
+    }
     void IncreasingSPoints()
     {
 
@@ -140,6 +167,10 @@ public class AttribsMenu : MonoBehaviour
 
                 break;
         }
+    }
+    void SendData()
+    {
+        StartCoroutine(Post(SvalueString, AvalueString, HvalueString, WvalueString,IvalueString));
     }
 }
 
