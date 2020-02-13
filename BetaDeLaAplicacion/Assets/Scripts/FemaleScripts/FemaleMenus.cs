@@ -35,7 +35,15 @@ public class FemaleMenus : MonoBehaviour
     public GameObject HeadAccesories;
     public GameObject HairAccesories;
     //
-   
+    public GameObject AgiPoints;
+    public GameObject StrPoints;
+    public GameObject WisPoints;
+    public GameObject HeaPoints;
+    public GameObject IntPoints;
+    public GameObject ReamainingPoints;
+    public GameObject UsedPoints;
+    public GameObject AttribTittle;
+
 
 
     public void MostrarMenu(int MenuSelected)
@@ -43,7 +51,7 @@ public class FemaleMenus : MonoBehaviour
         switch (MenuSelected)
         {
             case 1://--------------------------1=HairMenus
-
+                HideAttribsControls();
                 HideMenus();
                 HairMenu.SetActive(true);
                 FrontHair.SetActive(true);
@@ -52,7 +60,7 @@ public class FemaleMenus : MonoBehaviour
                 break;
 
             case 2://---------------------2=HeadMenus
-
+                HideAttribsControls();
                 HideMenus();
                 EyesMenu.SetActive(true);
                 EarsMenu.SetActive(true);
@@ -63,7 +71,7 @@ public class FemaleMenus : MonoBehaviour
 
                 break;
             case 3://---------------------3=BodyMenus
-
+                HideAttribsControls();
                 HideMenus();
                 ArmorMenu.SetActive(true);
                 TopsMenu.SetActive(true);
@@ -72,7 +80,7 @@ public class FemaleMenus : MonoBehaviour
                 TorsoMenu.SetActive(true);
                 break;
             case 4:
-
+                HideAttribsControls();
                 HideMenus();
                 GauntletsMenu.SetActive(true);
                 ShouldersMenu.SetActive(true);
@@ -81,12 +89,24 @@ public class FemaleMenus : MonoBehaviour
 
                 break;
             case 5:
-
+                HideAttribsControls();
                 HideMenus();
                 UpperArmorMenu.SetActive(true);
                 BootsMenu.SetActive(true);
                 PantsMenu.SetActive(true);
                 SkirtsMenu.SetActive(true);
+
+                break;
+            case 6:
+                HideMenus();
+                AgiPoints.SetActive(true);
+                StrPoints.SetActive(true);
+                HeaPoints.SetActive(true);
+                IntPoints.SetActive(true);
+                WisPoints.SetActive(true);
+                AttribTittle.SetActive(true);
+                ReamainingPoints.SetActive(true);
+                UsedPoints.SetActive(true);
 
                 break;
             default:
@@ -122,5 +142,17 @@ public class FemaleMenus : MonoBehaviour
         GauntletsMenu.SetActive(false);
         ShouldersMenu.SetActive(false);
         GlovesMenu.SetActive(false);
+    }
+    void HideAttribsControls()
+    {
+        AgiPoints.SetActive(false);
+        StrPoints.SetActive(false);
+        HeaPoints.SetActive(false);
+        IntPoints.SetActive(false);
+        WisPoints.SetActive(false);
+        AttribTittle.SetActive(false);
+        ReamainingPoints.SetActive(false);
+        UsedPoints.SetActive(false);
+
     }
 }

@@ -19,34 +19,43 @@ public class SelectGender : MonoBehaviour
     public GameObject FemaLegsButton;
     public GameObject FemaArmsButton;
 
+   
+
 
     public void ShowAvatar(int Actual)
     {
-        if (Actual == 1)//--------------------------1=Male
+        switch (Actual)
         {
-            HideFemaControls();
-            Male.SetActive(true);
-            Female.SetActive(false);
-            MaleHairButton.SetActive(true);
-            MaleHeadButton.SetActive(true);
-            MaleLegsButton.SetActive(true);
-            MaleArmsButton.SetActive(true);
-            MaleBodyButton.SetActive(true);
+            case 1:
+               
+                HideFemaControls();
+                Male.SetActive(true);
+                Female.SetActive(false);
+                MaleHairButton.SetActive(true);
+                MaleHeadButton.SetActive(true);
+                MaleLegsButton.SetActive(true);
+                MaleArmsButton.SetActive(true);
+                MaleBodyButton.SetActive(true);
+
+                break;
+            case 2:
+                Female.SetActive(true);
+                Male.SetActive(false);
+                HideMaleControls();
+                
+                FemaHairButton.SetActive(true);
+                FemaHeadButton.SetActive(true);
+                FemaLegsButton.SetActive(true);
+                FemaArmsButton.SetActive(true);
+                FemaBodyButton.SetActive(true);
+
+                break;
+            default:
+
+                break;
+
 
         }
-        if(Actual==2)//---------------------2=Female
-        {
-            Female.SetActive(true);
-            Male.SetActive(false);
-            HideMaleControls();
-            FemaHairButton.SetActive(true);
-            FemaHeadButton.SetActive(true);
-            FemaLegsButton.SetActive(true);
-            FemaArmsButton.SetActive(true);
-            FemaBodyButton.SetActive(true);
-
-        }
-        
     }
     public void HideMaleControls()
     {
@@ -64,6 +73,7 @@ public class SelectGender : MonoBehaviour
         FemaArmsButton.SetActive(false);
         FemaBodyButton.SetActive(false);
     }
+   
 
 
 }

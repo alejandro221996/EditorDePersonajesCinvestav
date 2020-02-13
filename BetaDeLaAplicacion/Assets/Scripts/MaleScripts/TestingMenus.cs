@@ -6,33 +6,42 @@ public class TestingMenus : MonoBehaviour
 {
     public GameObject BootsMenu;
     public GameObject PantsMenu;
-    //public GameObject LegsButton;
+   
     public GameObject BeltMenu;
     public GameObject UpperArmorMenu;
     public GameObject GauntletsMenu;
     public GameObject ShouldersMenu;
     
-    //public GameObject ArmsButton;
+    
     public GameObject ArmorMenu;
     public GameObject TopMenu;
     public GameObject OuterMenu;
     public GameObject AccesoriesMenu;
     public GameObject WingMenu;
     
-    //public GameObject BodyButton;
+   
     public GameObject HairMenu;
-    //public GameObject HairTitle;
-    //public GameObject HairButton;
     public GameObject AccesoriesHMenu;
     
-    //public GameObject AccesoriesTitle;
+    
     public GameObject HatMenu;
     public GameObject EarsMenu;
     public GameObject EyesMenu;
     public GameObject HelmetMenu;
-    //public GameObject HeadButton;
+   
     public GameObject FacialHairMenu;
     public GameObject HeadAccesories;
+
+    public GameObject AgiPoints;
+    public GameObject StrPoints;
+    public GameObject WisPoints;
+    public GameObject HeaPoints;
+    public GameObject IntPoints;
+    public GameObject ReamainingPoints;
+    public GameObject UsedPoints;
+    public GameObject AttribTittle;
+
+
 
 
     public void MostrarMenu(int MenuSelected)
@@ -40,7 +49,7 @@ public class TestingMenus : MonoBehaviour
         switch (MenuSelected)
         {
             case 1://--------------------------1=Male
-
+                HideAttribsControls();
                 HideMenus();
                 HairMenu.SetActive(true);
                 AccesoriesHMenu.SetActive(true);
@@ -48,7 +57,7 @@ public class TestingMenus : MonoBehaviour
                 break;
 
             case 2://---------------------2=Female
-
+                HideAttribsControls();
                 HideMenus();
                 EyesMenu.SetActive(true);
                 EarsMenu.SetActive(true);
@@ -60,7 +69,7 @@ public class TestingMenus : MonoBehaviour
 
                 break;
             case 3:
-
+                HideAttribsControls();
                 HideMenus();
                 ArmorMenu.SetActive(true);
                 TopMenu.SetActive(true);
@@ -69,7 +78,7 @@ public class TestingMenus : MonoBehaviour
                 WingMenu.SetActive(true);
                 break;
             case 4:
-
+                HideAttribsControls();
                 HideMenus();
                 GauntletsMenu.SetActive(true);
                 ShouldersMenu.SetActive(true);
@@ -77,12 +86,24 @@ public class TestingMenus : MonoBehaviour
 
                 break;
             case 5:
-
+                HideAttribsControls();
                 HideMenus();
                 UpperArmorMenu.SetActive(true);
                 BootsMenu.SetActive(true);
                 PantsMenu.SetActive(true);
                 BeltMenu.SetActive(true);
+
+                break;
+            case 6:
+                HideMenus();
+                AgiPoints.SetActive(true);
+                StrPoints.SetActive(true);
+                HeaPoints.SetActive(true);
+                IntPoints.SetActive(true);
+                WisPoints.SetActive(true);
+                AttribTittle.SetActive(true);
+                ReamainingPoints.SetActive(true);
+                UsedPoints.SetActive(true);
 
                 break;
             default:
@@ -117,5 +138,17 @@ public class TestingMenus : MonoBehaviour
         GauntletsMenu.SetActive(false);
         ShouldersMenu.SetActive(false);
     }
+    void HideAttribsControls()
+    {
+        AgiPoints.SetActive(false);
+        StrPoints.SetActive(false);
+        HeaPoints.SetActive(false);
+        IntPoints.SetActive(false);
+        WisPoints.SetActive(false);
+        AttribTittle.SetActive(false);
+        ReamainingPoints.SetActive(false);
+        UsedPoints.SetActive(false);
+
     }
+}
 

@@ -1761,6 +1761,8 @@ GameObject:
   - component: {fileID: 29917966}
   - component: {fileID: 29917965}
   - component: {fileID: 29917964}
+  - component: {fileID: 29917967}
+  - component: {fileID: 29917968}
   m_Layer: 5
   m_Name: Assign Attributes
   m_TagString: Untagged
@@ -1835,7 +1837,29 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 29917965}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 29917967}
+        m_MethodName: MostrarMenu
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 6
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 29917968}
+        m_MethodName: MostrarMenu
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 6
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &29917965
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1871,6 +1895,85 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 29917962}
   m_CullTransparentMesh: 0
+--- !u!114 &29917967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 29917962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e47029a9bb05234c95295d544ae642d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BootsMenu: {fileID: 3883546}
+  PantsMenu: {fileID: 2072296652}
+  BeltMenu: {fileID: 1090452177}
+  UpperArmorMenu: {fileID: 1257375425}
+  GauntletsMenu: {fileID: 1570478505}
+  ShouldersMenu: {fileID: 324520186}
+  ArmorMenu: {fileID: 2092448702}
+  TopMenu: {fileID: 258234916}
+  OuterMenu: {fileID: 1600303392}
+  AccesoriesMenu: {fileID: 1459421338}
+  WingMenu: {fileID: 599145570}
+  HairMenu: {fileID: 1980120117}
+  AccesoriesHMenu: {fileID: 1239456625}
+  HatMenu: {fileID: 1610258097}
+  EarsMenu: {fileID: 1307806800}
+  EyesMenu: {fileID: 97147681}
+  HelmetMenu: {fileID: 1697122513}
+  FacialHairMenu: {fileID: 134228670}
+  HeadAccesories: {fileID: 1441248337}
+  AgiPoints: {fileID: 1688297042}
+  StrPoints: {fileID: 1064203320}
+  WisPoints: {fileID: 1741678804}
+  HeaPoints: {fileID: 883360887}
+  IntPoints: {fileID: 1315160212}
+  ReamainingPoints: {fileID: 644595319}
+  UsedPoints: {fileID: 371124887}
+  AttribTittle: {fileID: 1276476789}
+--- !u!114 &29917968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 29917962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fb55b3b9c35d2f4ca393db25f16e3a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UpperArmorMenu: {fileID: 1335212382}
+  BootsMenu: {fileID: 1624782361}
+  SkirtsMenu: {fileID: 2013060387}
+  PantsMenu: {fileID: 435419766}
+  GlovesMenu: {fileID: 1996635309}
+  GauntletsMenu: {fileID: 1840251977}
+  ShouldersMenu: {fileID: 1457217901}
+  ArmorMenu: {fileID: 847822461}
+  TorsoMenu: {fileID: 869666715}
+  DressesMenu: {fileID: 1310964550}
+  BAccesoriesMenu: {fileID: 1712993203}
+  TopsMenu: {fileID: 189430587}
+  HairMenu: {fileID: 1024971282}
+  FrontHair: {fileID: 793166687}
+  BackHair: {fileID: 1830637679}
+  HatMenu: {fileID: 230233728}
+  EarsMenu: {fileID: 2081343919}
+  EyesMenu: {fileID: 1925684639}
+  HeadAccesories: {fileID: 830615810}
+  HairAccesories: {fileID: 1761108961}
+  AgiPoints: {fileID: 1688297042}
+  StrPoints: {fileID: 1064203320}
+  WisPoints: {fileID: 1741678804}
+  HeaPoints: {fileID: 883360887}
+  IntPoints: {fileID: 1315160212}
+  ReamainingPoints: {fileID: 644595319}
+  UsedPoints: {fileID: 371124887}
+  AttribTittle: {fileID: 1276476789}
 --- !u!1 &32297757
 GameObject:
   m_ObjectHideFlags: 0
@@ -10203,6 +10306,14 @@ MonoBehaviour:
   EyesMenu: {fileID: 1925684639}
   HeadAccesories: {fileID: 830615810}
   HairAccesories: {fileID: 1761108961}
+  AgiPoints: {fileID: 1688297042}
+  StrPoints: {fileID: 1064203320}
+  WisPoints: {fileID: 1741678804}
+  HeaPoints: {fileID: 883360887}
+  IntPoints: {fileID: 1315160212}
+  ReamainingPoints: {fileID: 644595319}
+  UsedPoints: {fileID: 371124887}
+  AttribTittle: {fileID: 1276476789}
 --- !u!114 &177457868
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11983,7 +12094,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -16175,7 +16286,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -20273,6 +20384,7 @@ GameObject:
   m_Component:
   - component: {fileID: 365914385}
   - component: {fileID: 365914386}
+  - component: {fileID: 365914387}
   m_Layer: 5
   m_Name: Slider
   m_TagString: Untagged
@@ -20349,9 +20461,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: IncreasingHPoints
-        m_Mode: 0
+      - m_Target: {fileID: 365914387}
+        m_MethodName: AttribsPoints
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -20360,6 +20472,29 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &365914387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365914384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecba93303af1aab4e988013485a3cdd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Sslider: {fileID: 928548095}
+  Aslider: {fileID: 945681042}
+  Hslider: {fileID: 365914386}
+  Wslider: {fileID: 2096585706}
+  Islider: {fileID: 1620125714}
+  SPoints: {fileID: 1185545259}
+  APoints: {fileID: 409348292}
+  HPoints: {fileID: 1566769821}
+  WPoints: {fileID: 1773700391}
+  RPoints: {fileID: 1516356269}
+  IPoints: {fileID: 412157199}
 --- !u!1 &369196658
 GameObject:
   m_ObjectHideFlags: 0
@@ -20590,7 +20725,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &371124888
 RectTransform:
   m_ObjectHideFlags: 0
@@ -21934,7 +22069,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -24521,7 +24656,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &435419767
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30484,7 +30619,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -30992,7 +31127,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -36060,7 +36195,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &644595320
 RectTransform:
   m_ObjectHideFlags: 0
@@ -45536,6 +45671,14 @@ MonoBehaviour:
   HelmetMenu: {fileID: 1697122513}
   FacialHairMenu: {fileID: 134228670}
   HeadAccesories: {fileID: 1441248337}
+  AgiPoints: {fileID: 1688297042}
+  StrPoints: {fileID: 1064203320}
+  WisPoints: {fileID: 1741678804}
+  HeaPoints: {fileID: 883360887}
+  IntPoints: {fileID: 1315160212}
+  ReamainingPoints: {fileID: 644595319}
+  UsedPoints: {fileID: 371124887}
+  AttribTittle: {fileID: 1276476789}
 --- !u!1 &817868559
 GameObject:
   m_ObjectHideFlags: 0
@@ -48674,7 +48817,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &883360888
 RectTransform:
   m_ObjectHideFlags: 0
@@ -50832,9 +50975,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecba93303af1aab4e988013485a3cdd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Sslider: {fileID: 928548095}
+  Aslider: {fileID: 945681042}
+  Hslider: {fileID: 365914386}
+  Wslider: {fileID: 2096585706}
+  Islider: {fileID: 1620125714}
   SPoints: {fileID: 1185545259}
   APoints: {fileID: 409348292}
+  HPoints: {fileID: 1566769821}
+  WPoints: {fileID: 1773700391}
   RPoints: {fileID: 1516356269}
+  IPoints: {fileID: 412157199}
 --- !u!114 &928548095
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50877,14 +51028,14 @@ MonoBehaviour:
   m_Direction: 0
   m_MinValue: 0
   m_MaxValue: 10
-  m_WholeNumbers: 0
+  m_WholeNumbers: 1
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 928548094}
-        m_MethodName: IncreasingPoints
-        m_Mode: 0
+        m_MethodName: AttribsPoints
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -51962,6 +52113,7 @@ GameObject:
   m_Component:
   - component: {fileID: 945681041}
   - component: {fileID: 945681042}
+  - component: {fileID: 945681043}
   m_Layer: 5
   m_Name: Slider
   m_TagString: Untagged
@@ -52037,7 +52189,41 @@ MonoBehaviour:
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 945681043}
+        m_MethodName: AttribsPoints
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &945681043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 945681040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecba93303af1aab4e988013485a3cdd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Sslider: {fileID: 928548095}
+  Aslider: {fileID: 945681042}
+  Hslider: {fileID: 365914386}
+  Wslider: {fileID: 2096585706}
+  Islider: {fileID: 1620125714}
+  SPoints: {fileID: 1185545259}
+  APoints: {fileID: 409348292}
+  HPoints: {fileID: 1566769821}
+  WPoints: {fileID: 1773700391}
+  RPoints: {fileID: 1516356269}
+  IPoints: {fileID: 412157199}
 --- !u!1 &946870277
 GameObject:
   m_ObjectHideFlags: 0
@@ -55765,7 +55951,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1000509130
 RectTransform:
   m_ObjectHideFlags: 0
@@ -56304,6 +56490,14 @@ MonoBehaviour:
   EyesMenu: {fileID: 1925684639}
   HeadAccesories: {fileID: 830615810}
   HairAccesories: {fileID: 1761108961}
+  AgiPoints: {fileID: 1688297042}
+  StrPoints: {fileID: 1064203320}
+  WisPoints: {fileID: 1741678804}
+  HeaPoints: {fileID: 883360887}
+  IntPoints: {fileID: 1315160212}
+  ReamainingPoints: {fileID: 644595319}
+  UsedPoints: {fileID: 371124887}
+  AttribTittle: {fileID: 1276476789}
 --- !u!114 &1005828269
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59469,7 +59663,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1064203321
 RectTransform:
   m_ObjectHideFlags: 0
@@ -74012,6 +74206,14 @@ MonoBehaviour:
   EyesMenu: {fileID: 1925684639}
   HeadAccesories: {fileID: 830615810}
   HairAccesories: {fileID: 1761108961}
+  AgiPoints: {fileID: 1688297042}
+  StrPoints: {fileID: 1064203320}
+  WisPoints: {fileID: 1741678804}
+  HeaPoints: {fileID: 883360887}
+  IntPoints: {fileID: 1315160212}
+  ReamainingPoints: {fileID: 644595319}
+  UsedPoints: {fileID: 371124887}
+  AttribTittle: {fileID: 1276476789}
 --- !u!114 &1272679672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74502,7 +74704,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1276476790
 RectTransform:
   m_ObjectHideFlags: 0
@@ -76247,7 +76449,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -77226,7 +77428,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1315160213
 RectTransform:
   m_ObjectHideFlags: 0
@@ -78459,7 +78661,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -82068,6 +82270,14 @@ MonoBehaviour:
   EyesMenu: {fileID: 1925684639}
   HeadAccesories: {fileID: 830615810}
   HairAccesories: {fileID: 1761108961}
+  AgiPoints: {fileID: 1688297042}
+  StrPoints: {fileID: 1064203320}
+  WisPoints: {fileID: 1741678804}
+  HeaPoints: {fileID: 883360887}
+  IntPoints: {fileID: 1315160212}
+  ReamainingPoints: {fileID: 644595319}
+  UsedPoints: {fileID: 371124887}
+  AttribTittle: {fileID: 1276476789}
 --- !u!114 &1438593821
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -82287,6 +82497,14 @@ MonoBehaviour:
   HelmetMenu: {fileID: 1697122513}
   FacialHairMenu: {fileID: 134228670}
   HeadAccesories: {fileID: 1441248337}
+  AgiPoints: {fileID: 1688297042}
+  StrPoints: {fileID: 1064203320}
+  WisPoints: {fileID: 1741678804}
+  HeaPoints: {fileID: 883360887}
+  IntPoints: {fileID: 1315160212}
+  ReamainingPoints: {fileID: 644595319}
+  UsedPoints: {fileID: 371124887}
+  AttribTittle: {fileID: 1276476789}
 --- !u!1 &1441248337
 GameObject:
   m_ObjectHideFlags: 0
@@ -87340,6 +87558,14 @@ MonoBehaviour:
   EyesMenu: {fileID: 1925684639}
   HeadAccesories: {fileID: 830615810}
   HairAccesories: {fileID: 1761108961}
+  AgiPoints: {fileID: 1688297042}
+  StrPoints: {fileID: 1064203320}
+  WisPoints: {fileID: 1741678804}
+  HeaPoints: {fileID: 883360887}
+  IntPoints: {fileID: 1315160212}
+  ReamainingPoints: {fileID: 644595319}
+  UsedPoints: {fileID: 371124887}
+  AttribTittle: {fileID: 1276476789}
 --- !u!114 &1522892091
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -92843,7 +93069,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -93670,6 +93896,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1620125713}
   - component: {fileID: 1620125714}
+  - component: {fileID: 1620125715}
   m_Layer: 5
   m_Name: Slider
   m_TagString: Untagged
@@ -93746,9 +93973,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: IncreasingIPoints
-        m_Mode: 0
+      - m_Target: {fileID: 1620125715}
+        m_MethodName: AttribsPoints
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -93757,6 +93984,29 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1620125715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1620125712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecba93303af1aab4e988013485a3cdd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Sslider: {fileID: 928548095}
+  Aslider: {fileID: 945681042}
+  Hslider: {fileID: 365914386}
+  Wslider: {fileID: 2096585706}
+  Islider: {fileID: 1620125714}
+  SPoints: {fileID: 1185545259}
+  APoints: {fileID: 409348292}
+  HPoints: {fileID: 1566769821}
+  WPoints: {fileID: 1773700391}
+  RPoints: {fileID: 1516356269}
+  IPoints: {fileID: 412157199}
 --- !u!1 &1620209573
 GameObject:
   m_ObjectHideFlags: 0
@@ -96754,7 +97004,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -97174,7 +97424,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1688297043
 RectTransform:
   m_ObjectHideFlags: 0
@@ -99693,7 +99943,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1741678805
 RectTransform:
   m_ObjectHideFlags: 0
@@ -102614,6 +102864,14 @@ MonoBehaviour:
   HelmetMenu: {fileID: 1697122513}
   FacialHairMenu: {fileID: 134228670}
   HeadAccesories: {fileID: 1441248337}
+  AgiPoints: {fileID: 1688297042}
+  StrPoints: {fileID: 1064203320}
+  WisPoints: {fileID: 1741678804}
+  HeaPoints: {fileID: 883360887}
+  IntPoints: {fileID: 1315160212}
+  ReamainingPoints: {fileID: 644595319}
+  UsedPoints: {fileID: 371124887}
+  AttribTittle: {fileID: 1276476789}
 --- !u!1 &1801625972
 GameObject:
   m_ObjectHideFlags: 0
@@ -106349,6 +106607,14 @@ MonoBehaviour:
   HelmetMenu: {fileID: 1697122513}
   FacialHairMenu: {fileID: 134228670}
   HeadAccesories: {fileID: 1441248337}
+  AgiPoints: {fileID: 1688297042}
+  StrPoints: {fileID: 1064203320}
+  WisPoints: {fileID: 1741678804}
+  HeaPoints: {fileID: 883360887}
+  IntPoints: {fileID: 1315160212}
+  ReamainingPoints: {fileID: 644595319}
+  UsedPoints: {fileID: 371124887}
+  AttribTittle: {fileID: 1276476789}
 --- !u!1 &1869910505
 GameObject:
   m_ObjectHideFlags: 0
@@ -107899,7 +108165,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -115615,6 +115881,14 @@ MonoBehaviour:
   HelmetMenu: {fileID: 1697122513}
   FacialHairMenu: {fileID: 134228670}
   HeadAccesories: {fileID: 1441248337}
+  AgiPoints: {fileID: 1688297042}
+  StrPoints: {fileID: 1064203320}
+  WisPoints: {fileID: 1741678804}
+  HeaPoints: {fileID: 883360887}
+  IntPoints: {fileID: 1315160212}
+  ReamainingPoints: {fileID: 644595319}
+  UsedPoints: {fileID: 371124887}
+  AttribTittle: {fileID: 1276476789}
 --- !u!1 &2015458317
 GameObject:
   m_ObjectHideFlags: 0
@@ -120645,6 +120919,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2096585705}
   - component: {fileID: 2096585706}
+  - component: {fileID: 2096585707}
   m_Layer: 5
   m_Name: Slider
   m_TagString: Untagged
@@ -120721,9 +120996,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: IncreasingWPoints
-        m_Mode: 0
+      - m_Target: {fileID: 2096585707}
+        m_MethodName: AttribsPoints
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -120732,6 +121007,29 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &2096585707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2096585704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecba93303af1aab4e988013485a3cdd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Sslider: {fileID: 928548095}
+  Aslider: {fileID: 945681042}
+  Hslider: {fileID: 365914386}
+  Wslider: {fileID: 2096585706}
+  Islider: {fileID: 1620125714}
+  SPoints: {fileID: 1185545259}
+  APoints: {fileID: 409348292}
+  HPoints: {fileID: 1566769821}
+  WPoints: {fileID: 1773700391}
+  RPoints: {fileID: 1516356269}
+  IPoints: {fileID: 412157199}
 --- !u!1 &2099258349
 GameObject:
   m_ObjectHideFlags: 0
