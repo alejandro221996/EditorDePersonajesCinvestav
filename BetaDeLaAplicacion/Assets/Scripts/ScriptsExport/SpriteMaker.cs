@@ -11,6 +11,9 @@ public class SpriteMaker : MonoBehaviour
     SpriteRenderer Render;
 
     Texture2D tex;
+    
+  
+   
     // Inicializar
     public void ExportarAvatar()
     {
@@ -19,7 +22,9 @@ public class SpriteMaker : MonoBehaviour
         MakeTexture();
         //Creando un sprite usando esa textura
         MakeSprite();
-        Save();
+        //Save();
+        //Mandando Attributos
+       
     }
 
     void MakeTexture()
@@ -84,6 +89,7 @@ public class SpriteMaker : MonoBehaviour
         File.WriteAllBytes(dirPath + "Image-" + timeStamp + ".png", bytes);
 
 
+
     }
     void MakeSprite()
     {
@@ -96,11 +102,9 @@ public class SpriteMaker : MonoBehaviour
 
        
     }
-    void Save()
-    {
-        
-
-    }
+    
+   
+}
     // Update is called once per frame
 
-}
+

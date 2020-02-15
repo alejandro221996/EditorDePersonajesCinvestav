@@ -40,6 +40,7 @@ public class TestingMenus : MonoBehaviour
     public GameObject ReamainingPoints;
     public GameObject UsedPoints;
     public GameObject AttribTittle;
+    
 
 
 
@@ -105,6 +106,7 @@ public class TestingMenus : MonoBehaviour
                 ReamainingPoints.SetActive(true);
                 UsedPoints.SetActive(true);
 
+
                 break;
             default:
                 break;
@@ -148,6 +150,7 @@ public class TestingMenus : MonoBehaviour
         AttribTittle.SetActive(false);
         ReamainingPoints.SetActive(false);
         UsedPoints.SetActive(false);
+       
 
     }
 }

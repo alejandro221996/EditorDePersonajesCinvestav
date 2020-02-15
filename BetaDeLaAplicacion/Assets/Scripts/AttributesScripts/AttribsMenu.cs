@@ -19,6 +19,7 @@ public class AttribsMenu : MonoBehaviour
     public GameObject Message;
     public GameObject DiscardMenu;
     public GameObject ConfirmMenu;
+   
     //Aplicacion Web
     [SerializeField]
     private string BASE_URL = "https://docs.google.com/forms/u/1/d/e/1FAIpQLScE-G2H2f0qznIb0mmU8pRh8KuAi4-KvPqkEHpYXTSVOEk1mg/formResponse";
@@ -30,12 +31,12 @@ public class AttribsMenu : MonoBehaviour
     string HvalueString ;
     string WvalueString ;
     string IvalueString ;
-    string RValueString ;
+   
 
     //
 
     //Valores Enteros De Los Sliders
-    int Svalue = 0;
+     int Svalue = 0;
     int Avalue = 0;
     int Hvalue = 0;
     int Wvalue = 0;
@@ -47,14 +48,14 @@ public class AttribsMenu : MonoBehaviour
         form.AddField("entry.1657925407", strength);
         form.AddField("entry.1584728741", agility);
         form.AddField("entry.1210576219", health);
-        form.AddField("entry.1986338539", wisdom);
-        form.AddField("")
+        form.AddField("entry.1831548053", wisdom);
+        form.AddField("entry.1986338539", intelligence);
         byte[] rawData = form.data;
         WWW www = new WWW(BASE_URL, rawData);
         yield return www;
 
     }
-    void IncreasingSPoints()
+   public void IncreasingSPoints()
     {
 
 
@@ -67,7 +68,7 @@ public class AttribsMenu : MonoBehaviour
 
 
     }
-    void IncreasingAPoints()
+    public void IncreasingAPoints()
     {
         float ASliderValue = Aslider.value;
         APoints.text = Mathf.RoundToInt(ASliderValue) + "";
@@ -76,7 +77,7 @@ public class AttribsMenu : MonoBehaviour
         Debug.Log(Avalue + "AValue");
         //Debug.Log(ASliderValue);
     }
-    void IncreasingHPoints()
+    public void IncreasingHPoints()
     {
         float HSliderValue = Hslider.value;
         HPoints.text = Mathf.RoundToInt(HSliderValue) + "";
@@ -85,7 +86,7 @@ public class AttribsMenu : MonoBehaviour
         Debug.Log(Hvalue + "HValue");
         //Debug.Log(HSliderValue);
     }
-    void IncreasingWPoints()
+   public void IncreasingWPoints()
     {
         float WSliderValue = Wslider.value;
         WPoints.text = Mathf.RoundToInt(WSliderValue) + "";
@@ -94,7 +95,7 @@ public class AttribsMenu : MonoBehaviour
         Debug.Log(Wvalue + "WValue");
         // Debug.Log(WSliderValue);
     }
-    void IncreasingIPoints()
+    public void IncreasingIPoints()
     {
         float ISliderValue = Islider.value;
         IPoints.text = Mathf.RoundToInt(ISliderValue) + "";
@@ -114,6 +115,11 @@ public class AttribsMenu : MonoBehaviour
         IncreasingIPoints();
         IncreasingSPoints();
         IncreasingAPoints();
+        SvalueString = Svalue.ToString();
+        AvalueString = Avalue.ToString();
+        HvalueString = Hvalue.ToString();
+        WvalueString = Wvalue.ToString();
+        IvalueString = Ivalue.ToString();
 
         RValue = TotalPoints - Svalue - Avalue - Ivalue - Wvalue - Hvalue;
         RPoints.text = RValue + "";
@@ -132,12 +138,14 @@ public class AttribsMenu : MonoBehaviour
     }
     public void ContMenus(int ConfDis)
     {
+       
         switch (ConfDis)
         {
             case 1:
                 Message.SetActive(false);
                 DiscardMenu.SetActive(false);
                 ConfirmMenu.SetActive(false);
+               // SendData();
                 break;
             case 2:
                 Message.SetActive(false);
@@ -168,8 +176,20 @@ public class AttribsMenu : MonoBehaviour
                 break;
         }
     }
-    void SendData()
+    public void SendData()
     {
+        IncreasingAPoints();
+        IncreasingWPoints();
+        IncreasingIPoints();
+        IncreasingSPoints();
+        IncreasingAPoints();
+
+        SvalueString = Svalue.ToString();
+        AvalueString = Avalue.ToString();
+        IvalueString = Ivalue.ToString();
+        HvalueString = Hvalue.ToString();
+        WvalueString = Wvalue.ToString();
+
         StartCoroutine(Post(SvalueString, AvalueString, HvalueString, WvalueString,IvalueString));
     }
 }
