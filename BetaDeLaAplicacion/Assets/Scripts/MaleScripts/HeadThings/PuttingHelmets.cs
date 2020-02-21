@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class PuttingHelmets : MonoBehaviour
 {
-
+    public ExportingHairs ExportH;
     public GameObject Helmet1;
     public GameObject Helmet2;
     public GameObject Helmet3;
 
     public void PutHelmet(int HelmetSelected)
     {
+        ExportH.SetHelmet(HelmetSelected);
         switch (HelmetSelected)
         {
             case 1:

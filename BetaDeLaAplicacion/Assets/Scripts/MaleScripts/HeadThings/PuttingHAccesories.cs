@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PuttingHAccesories : MonoBehaviour
 {
+    public ExportingHairs ExportH;
     public GameObject HAccess1;
     public GameObject HAccess2;
     public GameObject HAccess3;
@@ -16,6 +17,7 @@ public class PuttingHAccesories : MonoBehaviour
 
     public void PutHAcess(int HAccessSelected)
     {
+        ExportH.SetHAcess(HAccessSelected);
         switch (HAccessSelected)
         {
             case 1:

@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class PuttingEars : MonoBehaviour
 {
+    public ExportingHairs ExportH;
     public GameObject Ears1;
     public GameObject Ears2;
     public GameObject Ears3;
 
         public void PutEars(int EarsSelected)
     {
+        ExportH.SetEars(EarsSelected);
         switch (EarsSelected)
         {
             case 1:

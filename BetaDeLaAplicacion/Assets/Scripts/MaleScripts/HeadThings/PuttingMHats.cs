@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PuttingMHats : MonoBehaviour
 {
+    public ExportingHairs ExportH;
     public GameObject MHat1;
     public GameObject MHat2;
     public GameObject MHat3;
@@ -11,6 +12,7 @@ public class PuttingMHats : MonoBehaviour
 
     public void PutMHat(int MHatSelected)
     {
+        ExportH.SetHat(MHatSelected);
         switch (MHatSelected)
         {
             case 1:

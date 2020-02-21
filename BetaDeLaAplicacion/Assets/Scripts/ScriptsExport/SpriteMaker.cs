@@ -102,6 +102,7 @@ public class SpriteMaker : MonoBehaviour
 
        
     }
+    //public void Exportar
     
    
 }

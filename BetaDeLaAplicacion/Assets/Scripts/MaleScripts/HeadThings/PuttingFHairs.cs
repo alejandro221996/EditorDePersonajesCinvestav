@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PuttingFHairs : MonoBehaviour
 {
+    public ExportingHairs ExportH;
     public GameObject FHair1;
     public GameObject FHair2;
     public GameObject FHair3;
@@ -15,6 +16,7 @@ public class PuttingFHairs : MonoBehaviour
 
     public void PutFhair(int FHairSelected)
     {
+        ExportH.SetFHair(FHairSelected);
         switch (FHairSelected)
         {
             case 1:

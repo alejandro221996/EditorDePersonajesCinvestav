@@ -12,7 +12,7 @@ public class QuestionsScript : MonoBehaviour
     public GameObject CountryField;
     public GameObject StateField;
     public GameObject CityField;
-   
+    string EdadActual;
     private string Response1;
     private string Response2;
     private string Response3;
@@ -38,15 +38,53 @@ public class QuestionsScript : MonoBehaviour
     }
     public void SubmitData()
     {
+        //Ages();
         Response1 = AvatarLabelsField.GetComponent<InputField>().text;
         Response2 = AvatarDescriptionField.GetComponent<InputField>().text;
         Response3 = GenderField.GetComponent<InputField>().text;
-        Response4 = AgeField.GetComponent<InputField>().text;
+        Response4 = EdadActual;
         Response5 = CountryField.GetComponent<InputField>().text;
         Response6 = StateField.GetComponent<InputField>().text;
         Response7 = CityField.GetComponent<InputField>().text;
 
         StartCoroutine(Post(Response1, Response2, Response3, Response4, Response5, Response6, Response7));
     }
+  /* public void Ages(int ActualAge)
+
+    {
+        string edad;
+        switch(ActualAge)
+        {
+            case 1:
+                edad = "12-15";
+                break;
+            case 2:
+                edad = "15-18";
+                break;
+            case 3:
+                edad = "18-23";
+                break;
+            case 4:
+                edad = "23-28";
+                break;
+            case 5:
+                edad = "28-33";
+                break;
+
+            case 6:
+                edad = "33-38";
+                break;
+            case 7:
+                edad = "38-43";
+                break;
+            case 8:
+                edad = "43-48";
+                break;
+            default:
+                break;
+
+        }
+        EdadActual = edad;
+    }*/
 
 }
