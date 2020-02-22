@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PuttingFHats : MonoBehaviour
 {
+    public ExportingHairs ExportH;
     public GameObject FHat1;
     public GameObject FHat2;
     public GameObject FHat3;
@@ -14,6 +15,8 @@ public class PuttingFHats : MonoBehaviour
 
     public void PutFHat(int FHatSelected)
     {
+        ExportH.SetFHat(FHatSelected);
+
         switch (FHatSelected)
         {
             case 1:

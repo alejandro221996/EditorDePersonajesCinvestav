@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class PuttingFeShoulders : MonoBehaviour
 {
+    public ExportingHairs ExportH;
     public GameObject FShoulder1;
     public GameObject FShoulder12;
     public GameObject FShoulder2;
-        public void PutFShoulder(int FShoulderSelected)
+    public void PutFShoulder(int FShoulderSelected)
     {
-        switch(FShoulderSelected)
+        ExportH.SetFShoulder(FShoulderSelected);
+        switch (FShoulderSelected)
         {
             case 1:
                 HideFShoulder();

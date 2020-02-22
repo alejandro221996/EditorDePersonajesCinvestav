@@ -4,18 +4,19 @@ using UnityEngine;
 
 public class PuttingHairAccesories : MonoBehaviour
 {
-
+    public ExportingHairs ExportH;
     public GameObject HaAccess1;
     public GameObject HaAccess2;
     public GameObject HaAccess3;
     public GameObject HaAccess4;
     public GameObject HaAccess5;
-    
+
 
 
 
     public void PutHaAccess(int HaAccessSelected)
     {
+        ExportH.SetFHAccess(HaAccessSelected);
         switch (HaAccessSelected)
         {
             case 1:
@@ -39,7 +40,7 @@ public class PuttingHairAccesories : MonoBehaviour
                 HideHaAccess();
                 HaAccess5.SetActive(true);
                 break;
-          
+
 
 
             default:
@@ -54,7 +55,7 @@ public class PuttingHairAccesories : MonoBehaviour
         HaAccess3.SetActive(false);
         HaAccess4.SetActive(false);
         HaAccess5.SetActive(false);
-       
+
 
 
     }

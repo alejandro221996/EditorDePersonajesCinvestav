@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PuttingGauntlets : MonoBehaviour
-{   public ExportingHairs ExportH;
+{
+    public ExportingHairs ExportH;
     public GameObject Gaunt1;
     public GameObject Gaunt2;
     public GameObject Gaunt3;
@@ -14,7 +15,8 @@ public class PuttingGauntlets : MonoBehaviour
 
 
     public void PutGaunt(int GauntSelected)
-    {ExportH.SetGauntlets(GauntSelected);
+    {
+        ExportH.SetGauntlets(GauntSelected);
         switch (GauntSelected)
         {
             case 1:

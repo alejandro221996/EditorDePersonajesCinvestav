@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PuttingFBoots : MonoBehaviour
 {
-
+    public ExportingHairs ExportH;
     public GameObject FBoots1;
     public GameObject FBoots2;
     public GameObject FBoots3;
@@ -14,6 +14,7 @@ public class PuttingFBoots : MonoBehaviour
     public GameObject FBoots7;
     public void PutFBoots(int FBootsSelected)
     {
+        ExportH.SetFBoots(FBootsSelected);
         switch (FBootsSelected)
         {
             case 1:

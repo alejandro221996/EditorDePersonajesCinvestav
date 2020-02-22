@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PuttingBAccesories : MonoBehaviour
 {
+    public ExportingHairs ExportH;
     public GameObject BAccess1;
     public GameObject BAccess2;
     public GameObject BAccess3;
@@ -11,18 +12,19 @@ public class PuttingBAccesories : MonoBehaviour
     public GameObject BAccess5;
     public GameObject BAccess6;
     public GameObject BAccess7;
-   public GameObject BAccess8;
+    public GameObject BAccess8;
     public GameObject BAccess9;
     public GameObject BAccess10;
     public GameObject BAccess11;
     public GameObject BAccess12;
     public GameObject BAccess13;
- 
+
 
 
 
     public void PutBAccess(int BAccessSelected)
     {
+        ExportH.SetFBAccess(BAccessSelected);
         switch (BAccessSelected)
         {
             case 1:
@@ -50,14 +52,14 @@ public class PuttingBAccesories : MonoBehaviour
                 HideBAccess();
                 BAccess6.SetActive(true);
                 break;
-              case 7:
-                  HideBAccess();
+            case 7:
+                HideBAccess();
                 BAccess7.SetActive(true);
-                  break;
-              case 8:
-                  HideBAccess();
+                break;
+            case 8:
+                HideBAccess();
                 BAccess8.SetActive(true);
-                  break;
+                break;
             case 9:
                 HideBAccess();
                 BAccess9.SetActive(true);
@@ -78,7 +80,7 @@ public class PuttingBAccesories : MonoBehaviour
                 HideBAccess();
                 BAccess13.SetActive(true);
                 break;
-       
+
 
             default:
                 break;
@@ -100,7 +102,7 @@ public class PuttingBAccesories : MonoBehaviour
         BAccess11.SetActive(false);
         BAccess12.SetActive(false);
         BAccess13.SetActive(false);
-     
+
 
     }
 }

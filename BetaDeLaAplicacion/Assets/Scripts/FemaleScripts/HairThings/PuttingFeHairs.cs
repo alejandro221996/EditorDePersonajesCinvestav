@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PuttingFeHairs : MonoBehaviour
 {
+    public ExportingHairs ExportH;
     public GameObject FeHair1;
     public GameObject FeHair2;
     public GameObject FeHair3;
@@ -17,10 +18,11 @@ public class PuttingFeHairs : MonoBehaviour
     public GameObject FeHair11;
     public GameObject FeHair12;
     public GameObject FeHair13;
-    
+
 
     public void PutFeHair(int FeHairSelected)
     {
+        ExportH.SetFeHair(FeHairSelected);
         switch (FeHairSelected)
         {
             case 1:
@@ -101,9 +103,9 @@ public class PuttingFeHairs : MonoBehaviour
 
 
                 break;
-           
 
-              
+
+
             default:
                 HideAll();
                 break;
@@ -126,7 +128,7 @@ public class PuttingFeHairs : MonoBehaviour
         FeHair11.SetActive(false);
         FeHair12.SetActive(false);
         FeHair13.SetActive(false);
-       
+
 
     }
 }

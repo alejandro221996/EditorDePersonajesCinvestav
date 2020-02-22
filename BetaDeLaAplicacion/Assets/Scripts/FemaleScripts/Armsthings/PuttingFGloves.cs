@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class PuttingFGloves : MonoBehaviour
 {
+    public ExportingHairs ExportH;
     public GameObject FGlove1;
     public GameObject FGlove2;
 
     public void PutFGlove(int FGloveSelected)
     {
+        ExportH.SetFGloves(FGloveSelected);
         switch (FGloveSelected)
         {
             case 1:
@@ -30,6 +32,6 @@ public class PuttingFGloves : MonoBehaviour
     {
         FGlove1.SetActive(false);
         FGlove2.SetActive(false);
-       
+
     }
 }

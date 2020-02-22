@@ -4,17 +4,19 @@ using UnityEngine;
 
 public class PuttingBackHair : MonoBehaviour
 {
+    public ExportingHairs ExportH;
     public GameObject BHair1;
     public GameObject BHair2;
     public GameObject BHair3;
     public GameObject BHair4;
     public GameObject BHair5;
-   
+
 
 
 
     public void PutBHair(int BHairSelected)
     {
+        ExportH.SetBackHair(BHairSelected);
         switch (BHairSelected)
         {
             case 1:
@@ -38,7 +40,7 @@ public class PuttingBackHair : MonoBehaviour
                 HideBHair();
                 BHair5.SetActive(true);
                 break;
-          
+
 
 
             default:
@@ -53,7 +55,7 @@ public class PuttingBackHair : MonoBehaviour
         BHair3.SetActive(false);
         BHair4.SetActive(false);
         BHair5.SetActive(false);
-       
+
 
 
     }

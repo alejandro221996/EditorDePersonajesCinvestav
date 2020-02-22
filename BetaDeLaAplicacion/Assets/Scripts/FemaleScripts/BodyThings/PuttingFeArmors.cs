@@ -4,16 +4,18 @@ using UnityEngine;
 
 public class PuttingFeArmors : MonoBehaviour
 {
+    public ExportingHairs ExportH;
     public GameObject FeArmor1;
     public GameObject FeArmor2;
     public GameObject FeArmor3;
-  
+
 
 
 
 
     public void PutFeArmor(int FeArmorSelected)
     {
+        ExportH.SetFArmor(FeArmorSelected);
         switch (FeArmorSelected)
         {
             case 1:
@@ -42,7 +44,7 @@ public class PuttingFeArmors : MonoBehaviour
         FeArmor1.SetActive(false);
         FeArmor2.SetActive(false);
         FeArmor3.SetActive(false);
-     
+
 
 
 

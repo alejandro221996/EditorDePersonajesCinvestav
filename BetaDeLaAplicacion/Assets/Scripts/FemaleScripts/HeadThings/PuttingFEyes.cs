@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PuttingFEyes : MonoBehaviour
 {
+    public ExportingHairs ExportH;
     public GameObject FEyes1;
     public GameObject FEyes2;
     public GameObject FEyes3;
@@ -15,6 +16,7 @@ public class PuttingFEyes : MonoBehaviour
 
     public void PutFEyes(int FEyesSelected)
     {
+        ExportH.SetFEyes(FEyesSelected);
         switch (FEyesSelected)
         {
             case 1:

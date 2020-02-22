@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PuttingDresses : MonoBehaviour
 {
+    public ExportingHairs ExportH;
     public GameObject Dress1;
     public GameObject Dress2;
     public GameObject Dress3;
@@ -16,6 +17,7 @@ public class PuttingDresses : MonoBehaviour
 
     public void PutDress(int DressSelected)
     {
+        ExportH.SetDress(DressSelected);
         switch (DressSelected)
         {
             case 1:

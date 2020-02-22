@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PuttingFEars : MonoBehaviour
 {
+    public ExportingHairs ExportH;
     public GameObject Ears1;
     public GameObject Ears2;
     public GameObject Ears3;
@@ -12,6 +13,7 @@ public class PuttingFEars : MonoBehaviour
 
     public void PutEars(int EarsSelected)
     {
+        ExportH.SetFEars(EarsSelected);
         switch (EarsSelected)
         {
             case 1:

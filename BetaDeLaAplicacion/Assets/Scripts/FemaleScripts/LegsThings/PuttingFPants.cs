@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class PuttingFPants : MonoBehaviour
 {
+    public ExportingHairs ExportH;
     public GameObject FPant1;
     public GameObject FPant2;
-   
+
     public void PutFPant(int FPantSelected)
     {
+        ExportH.SetFPants(FPantSelected);
         switch (FPantSelected)
         {
             case 1:
@@ -22,9 +24,9 @@ public class PuttingFPants : MonoBehaviour
                 FPant2.SetActive(true);
 
                 break;
-          
 
-            
+
+
             default:
                 break;
         }
@@ -33,6 +35,6 @@ public class PuttingFPants : MonoBehaviour
     {
         FPant1.SetActive(false);
         FPant2.SetActive(false);
-      
+
     }
 }

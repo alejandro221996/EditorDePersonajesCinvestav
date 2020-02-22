@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PuttingSkirts : MonoBehaviour
 {
+    public ExportingHairs ExportH;
     public GameObject Skirt1;
     public GameObject Skirt2;
     public GameObject Skirt3;
@@ -13,6 +14,7 @@ public class PuttingSkirts : MonoBehaviour
     public GameObject Skirt7;
     public void PutSkirt(int SkirtSelected)
     {
+        ExportH.SetFSkirts(SkirtSelected);
         switch (SkirtSelected)
         {
             case 1:
@@ -45,8 +47,8 @@ public class PuttingSkirts : MonoBehaviour
                 HideSkirt();
                 Skirt6.SetActive(true);
                 break;
-           
-               
+
+
             default:
                 break;
         }
@@ -59,6 +61,6 @@ public class PuttingSkirts : MonoBehaviour
         Skirt4.SetActive(false);
         Skirt5.SetActive(false);
         Skirt6.SetActive(false);
-        
+
     }
 }

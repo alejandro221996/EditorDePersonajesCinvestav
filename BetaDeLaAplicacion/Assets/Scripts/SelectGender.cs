@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SelectGender : MonoBehaviour
 {
+    public ExportingHairs ExportH;
     public GameObject Male;
     public GameObject Female;
     public GameObject SelectMale;
@@ -19,15 +20,16 @@ public class SelectGender : MonoBehaviour
     public GameObject FemaLegsButton;
     public GameObject FemaArmsButton;
 
-   
+
 
 
     public void ShowAvatar(int Actual)
     {
+        ExportH.SetGender(Actual);
         switch (Actual)
         {
             case 1:
-               
+
                 HideFemaControls();
                 Male.SetActive(true);
                 Female.SetActive(false);
@@ -42,7 +44,7 @@ public class SelectGender : MonoBehaviour
                 Female.SetActive(true);
                 Male.SetActive(false);
                 HideMaleControls();
-                
+
                 FemaHairButton.SetActive(true);
                 FemaHeadButton.SetActive(true);
                 FemaLegsButton.SetActive(true);
@@ -73,7 +75,7 @@ public class SelectGender : MonoBehaviour
         FemaArmsButton.SetActive(false);
         FemaBodyButton.SetActive(false);
     }
-   
+
 
 
 }

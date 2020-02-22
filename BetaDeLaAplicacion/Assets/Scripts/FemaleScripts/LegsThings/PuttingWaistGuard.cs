@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class PuttingWaistGuard : MonoBehaviour
 {
+    public ExportingHairs ExportH;
     public GameObject Waist1;
     public GameObject Waist2;
     public GameObject Waist3;
     public void PutWaist(int WaistSelected)
     {
+        ExportH.SetWaistGuard(WaistSelected);
         switch (WaistSelected)
         {
             case 1:

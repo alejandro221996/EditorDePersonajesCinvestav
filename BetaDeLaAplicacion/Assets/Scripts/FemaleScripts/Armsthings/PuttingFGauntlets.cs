@@ -4,17 +4,19 @@ using UnityEngine;
 
 public class PuttingFGauntlets : MonoBehaviour
 {
+    public ExportingHairs ExportH;
     public GameObject FGauntlet1;
     public GameObject FGauntlet2;
     public GameObject FGauntlet3;
     public void PutFGauntlet(int FGauntletSelected)
     {
+        ExportH.SetFGauntlet(FGauntletSelected);
         switch (FGauntletSelected)
         {
             case 1:
                 HideFGauntlet();
                 FGauntlet1.SetActive(true);
-               
+
 
                 break;
             case 2:

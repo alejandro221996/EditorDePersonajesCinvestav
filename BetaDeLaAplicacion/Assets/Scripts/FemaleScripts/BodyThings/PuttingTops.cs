@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PuttingTops : MonoBehaviour
 {
+    public ExportingHairs ExportH;
     public GameObject Top1;
     public GameObject Top2;
     public GameObject Top3;
@@ -16,6 +17,7 @@ public class PuttingTops : MonoBehaviour
 
     public void PutTop(int TopSelected)
     {
+        ExportH.SetTops(TopSelected);
         switch (TopSelected)
         {
             case 1:

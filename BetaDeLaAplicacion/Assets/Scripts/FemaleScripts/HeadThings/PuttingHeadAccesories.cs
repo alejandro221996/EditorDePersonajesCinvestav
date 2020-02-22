@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PuttingHeadAccesories : MonoBehaviour
 {
+    public ExportingHairs ExportH;
     public GameObject HFAccess1;
     public GameObject HFAccess2;
     public GameObject HFAccess3;
@@ -22,6 +23,7 @@ public class PuttingHeadAccesories : MonoBehaviour
 
     public void PutHFAccess(int HFAccessSelected)
     {
+        ExportH.SetFHeAccess(HFAccessSelected);
         switch (HFAccessSelected)
         {
             case 1:
@@ -73,10 +75,10 @@ public class PuttingHeadAccesories : MonoBehaviour
                 HideHFAccess();
                 HFAccess12.SetActive(true);
                 break;
-           /* case 13:
-                HideHFAccess();
-                HFAccess8.SetActive(true);
-                break;*/
+            /* case 13:
+                 HideHFAccess();
+                 HFAccess8.SetActive(true);
+                 break;*/
 
             default:
                 break;
