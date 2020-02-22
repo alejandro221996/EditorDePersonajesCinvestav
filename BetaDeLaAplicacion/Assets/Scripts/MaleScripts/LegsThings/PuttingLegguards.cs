@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PuttingLegguards : MonoBehaviour
-{
+{ public ExportingHairs ExportH;
     public GameObject Leggs1;
     public GameObject Leggs2;
     public GameObject Leggs3;
@@ -11,7 +11,7 @@ public class PuttingLegguards : MonoBehaviour
 
 
     public void PutLeggs(int LeggsSelected)
-    {
+    {ExportH.SetUpperArmor(LeggsSelected);
         switch (LeggsSelected)
         {
             case 1:

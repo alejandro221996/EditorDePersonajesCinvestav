@@ -17,7 +17,7 @@ public class PuttingHAccesories : MonoBehaviour
 
     public void PutHAcess(int HAccessSelected)
     {
-        ExportH.SetHAcess(HAccessSelected);
+        ExportH.SetHAccesories(HAccessSelected);
         switch (HAccessSelected)
         {
             case 1:

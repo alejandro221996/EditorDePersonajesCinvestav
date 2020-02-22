@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PuttingWings : MonoBehaviour
-{
+{ public ExportingHairs ExportH;
     public GameObject Wing1;
     public GameObject Wing2;
     public GameObject Wing3;
@@ -11,7 +11,7 @@ public class PuttingWings : MonoBehaviour
     
 
     public void PutWing(int WingSelected)
-    {
+    {ExportH.SetWings(WingSelected);
         switch (WingSelected)
         {
             case 1:

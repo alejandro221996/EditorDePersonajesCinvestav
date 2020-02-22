@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PuttingArmors : MonoBehaviour
-{
+{ public ExportingHairs ExportH;
     public GameObject Armor1;
     public GameObject Armor2;
     public GameObject Armor3;
 
     public void PutArmor(int ArmorSelected)
-    {
+    {ExportH.SetArmor(ArmorSelected);
         switch (ArmorSelected)
         {
             case 1:

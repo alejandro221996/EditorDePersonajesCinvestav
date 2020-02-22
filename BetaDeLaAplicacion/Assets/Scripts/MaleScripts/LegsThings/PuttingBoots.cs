@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PuttingBoots : MonoBehaviour
-{
+{ public ExportingHairs ExportH;
     public GameObject Boot1;
     public GameObject Boot2;
     public GameObject Boot3;
@@ -14,7 +14,7 @@ public class PuttingBoots : MonoBehaviour
 
 
     public void PutBoot(int BootSelected)
-    {
+    {ExportH.SetBoots(BootSelected);
         switch (BootSelected)
         {
             case 1:

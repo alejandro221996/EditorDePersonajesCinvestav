@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PuttingBelts : MonoBehaviour
-{
+{ public ExportingHairs ExportH;
     public GameObject Belt1;
 
     public void PutBelts(int BeltSelected)
 
-    {
+    {ExportH.SetBelt(BeltSelected);
         switch (BeltSelected)
         {
             case 1:

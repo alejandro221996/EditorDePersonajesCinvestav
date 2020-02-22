@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PuttingOuters : MonoBehaviour
 {
+    public ExportingHairs ExportH;
     public GameObject Outer1;
     public GameObject Outer2;
     public GameObject Outer3;
@@ -14,7 +15,7 @@ public class PuttingOuters : MonoBehaviour
     public GameObject Outer8;
 
     public void PutOuter(int OuterSelected)
-    {
+    { ExportH.SetOuters(OuterSelected);
         switch (OuterSelected)
         {
             case 1:

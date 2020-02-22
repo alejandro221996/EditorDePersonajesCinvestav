@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PuttingBAccess : MonoBehaviour
-{
+{public ExportingHairs ExportH;
     public GameObject BAccess1;
     public GameObject BAccess2;
     public GameObject BAccess3;
@@ -15,7 +15,7 @@ public class PuttingBAccess : MonoBehaviour
 
 
     public void PutBAccess(int BAccessSelected)
-    {
+    {ExportH.SetBAccess(BAccessSelected);
         switch (BAccessSelected)
         {
             case 1:

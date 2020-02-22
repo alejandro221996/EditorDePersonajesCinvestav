@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PuttingTBodys : MonoBehaviour
-{
+{ public ExportingHairs ExportH;
     public GameObject TBody1;
     public GameObject TBody2;
     public GameObject TBody3;
@@ -15,6 +15,7 @@ public class PuttingTBodys : MonoBehaviour
 
     public void PutTBody(int TBodySelected)
     {
+        ExportH.SetTBody(TBodySelected);
         switch (TBodySelected)
         {
             case 1:

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PuttingPants : MonoBehaviour
-{
+{ public ExportingHairs ExportH;
     public GameObject Pants1;
     public GameObject Pants2;
     public GameObject Pants3;
@@ -14,7 +14,7 @@ public class PuttingPants : MonoBehaviour
 
 
     public void PutPants(int PantsSelected)
-    {
+    {ExportH.SetPants(PantsSelected);
         switch (PantsSelected)
         {
             case 1:

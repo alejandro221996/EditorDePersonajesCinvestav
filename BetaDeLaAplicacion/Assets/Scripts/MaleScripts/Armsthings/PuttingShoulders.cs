@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PuttingShoulders : MonoBehaviour
 {
+    public ExportingHairs ExportH;
     public GameObject Shoulder1;
     public GameObject Shoulder2;
     public GameObject Shoulder3;
@@ -11,7 +12,7 @@ public class PuttingShoulders : MonoBehaviour
 
 
     public void PutShoulder(int ShoulderSelected)
-    {
+    { ExportH.SetShoulders(ShoulderSelected);
         switch (ShoulderSelected)
         {
             case 1:

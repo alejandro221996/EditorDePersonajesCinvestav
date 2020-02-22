@@ -7,18 +7,27 @@ public class ExportingHairs : MonoBehaviour
     
     public PuttingHairs PutMHairs;
     public PuttingAccessH PutMAHairs;
+
     public PuttingMEyes PutMEyes;
     public PuttingEars PutMEars;
     public PuttingFHairs PutMFHair;
     public PuttingHAccesories PutMHAccess;
     public PuttingHelmets PutMHelmet;
     public PuttingMHats PutMHats;
+
+    public PuttingOuters PutOuter;
+     public PuttingTBodys PutTBody;
     public PuttingArmors PutMArmor;
     public PuttingWings PutMwings;
     public PuttingBAccess PutMBAcess;
-    public PuttingWings PutMwings;
-    public PuttingWings PutMwings;
-    public PuttingWings PutMwings;
+    
+    public PuttingGauntlets PutGauntlets;
+    public PuttingShoulders PutShoulders;
+   
+    public PuttingBelts PutBelt;
+    public PuttingBoots PutBoots;
+    public PuttingPants PutPants;
+    public PuttingLegguards PutLegguards;
 
     private string HairSel="";
     private string AHairSel="";
@@ -29,7 +38,7 @@ public class ExportingHairs : MonoBehaviour
     private string HeadAccesoriesSel = "";
     private string FacialHairSel = "";
     private string ArmorSel = "";
-    private string TopSel = "";
+    private string TBodySel = "";
     private string OuterSel = "";
     private string BodyAccesoriesSel = "";
     private string WingsSel = "";
@@ -82,47 +91,79 @@ public class ExportingHairs : MonoBehaviour
     {
         AHairSel = in_AHairs.ToString();
     }
-    public void SetEyes(int in_Hat)
+    public void SetEyes(int in_Eyes)
     {
-        HatSel = in_Hat.ToString();
+        EyesSel = in_Eyes.ToString();
     }
-    public void SetEars(int in_Hat)
+    public void SetEars(int in_Ears)
     {
-        HatSel = in_Hat.ToString();
-    }
-    public void Set(int in_Hat)
-    {
-        HatSel = in_Hat.ToString();
+        EarsSel = in_Ears.ToString();
     }
     public void SetHat(int in_Hat)
     {
         HatSel = in_Hat.ToString();
     }
-    public void SetHat(int in_Hat)
+    public void SetHelmet(int in_Helmet)
     {
-        HatSel = in_Hat.ToString();
+        HelmetSel = in_Helmet.ToString();
     }
-    public void SetHat(int in_Hat)
+    public void SetHAccesories(int in_HAccess)
     {
-        HatSel = in_Hat.ToString();
+       HeadAccesoriesSel = in_HAccess.ToString();
     }
-    public void SetHat(int in_Hat)
+    public void SetFHair(int in_FHair)
     {
-        HatSel = in_Hat.ToString();
+       FacialHairSel = in_FHair.ToString();
     }
-    public void SetHat(int in_Hat)
+    public void SetArmor(int in_Armor)
     {
-        HatSel = in_Hat.ToString();
+        ArmorSel = in_Armor.ToString();
     }
-    public void SetHat(int in_Hat)
+    public void SetTBody(int in_TBody)
     {
-        HatSel = in_Hat.ToString();
+        TBodySel = in_TBody.ToString();
+    }
+    public void SetOuters(int in_Outers)
+    {
+        OuterSel = in_Outers.ToString();
+    }
+     public void SetBAccess(int in_BAccess)
+    {
+       BodyAccesoriesSel = in_BAccess.ToString();
+    }
+     public void SetWings(int in_Wings)
+    {
+        WingsSel = in_Wings.ToString();
+    }
+     public void SetShoulders(int in_Shoulders)
+    {
+        ShouldersSel  = in_Shoulders.ToString();
+    }
+     public void SetGauntlets(int in_Gauntlets)
+    {
+        GauntletsSel = in_Gauntlets.ToString();
+    }
+     public void SetUpperArmor(int in_UpperArmor)
+    {
+        UpperArmorSel = in_UpperArmor.ToString();
+    }
+     public void SetBelt(int in_Belt)
+    {
+       BeltSel = in_Belt.ToString();
+    }
+     public void SetBoots(int in_Boots)
+    {
+        BootsSel = in_Boots.ToString();
+    }
+     public void SetPants(int in_Pants)
+    {
+        PantsSel= in_Pants.ToString();
     }
 
     public void SummitData()
     {
         
-        StartCoroutine(Post(HairSel,AHairSel,HatSel));
+        StartCoroutine(Post(HairSel,AHairSel,EyesSel,EarsSel,HatSel,HelmetSel,HeadAccesoriesSel,FacialHairSel,ArmorSel,TBodySel,OuterSel,BodyAccesoriesSel,WingsSel,ShouldersSel,GauntletsSel,UpperArmorSel,BeltSel,BootsSel,PantsSel));
 
 
     }
