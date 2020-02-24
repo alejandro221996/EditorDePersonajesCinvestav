@@ -5,26 +5,24 @@ using UnityEngine.UI;
 
 public class QuestionsScript : MonoBehaviour
 {
-    //public AgesButton AgeSetting;
+    public DropDownAuto CountriesS;
+    public DropDownGender GendersS;
+    public DropAges AgeS;
+
+
     public GameObject AvatarLabelsField;
     public GameObject AvatarDescriptionField;
-    public GameObject GenderField;
-    public GameObject AgeField;
-    public GameObject CountryField;
-    public GameObject StateField;
-    public GameObject CityField;
+
     string EdadActual;
-    private string Response1;
-    private string Response2;
-    private string Response3;
-    private string Response4;
-    private string Response5;
-    private string Response6;
-    private string Response7;
+    private string Response1 = "";
+    private string Response2 = "";
+    private string Response3 = "";
+    private string Response4 = "";
+    private string Response5 = "";
 
 
     private string BASE_URL = "https://docs.google.com/forms/u/1/d/e/1FAIpQLSckSkxOors-ZE8dkG1RMBWSPNoPl_waconUvFBx6UG1heQklw/formResponse";
-    IEnumerator Post(string AvatarLabels, string AvatarDescription, string Gender, string Age, string Country, string State, string City)
+    IEnumerator Post(string AvatarLabels, string AvatarDescription, string Gender, string Age, string Country)// string Gender, string Age, string Country)
     {
         WWWForm form = new WWWForm();
         form.AddField("entry.613702313", AvatarLabels);
@@ -32,31 +30,38 @@ public class QuestionsScript : MonoBehaviour
         form.AddField("entry.1932287901", Gender);
         form.AddField("entry.1072302844", Age);
         form.AddField("entry.873422993", Country);
-        form.AddField("entry.1701443724", State);
-        form.AddField("entry.1737114437", City);
+
         byte[] rawData = form.data;
         WWW www = new WWW(BASE_URL, rawData);
         yield return www;
 
     }
-    /*public void SetAges(int in_Age)
+    public void SetCountry(string in_Country)
     {
-        AgeSel = in_Age.ToString();
-    }*/
+        Response5 = in_Country.ToString();
+    }
+    public void SetGender(string in_Gender)
+    {
+        Response3 = in_Gender.ToString();
+    }
+    public void SetAge(string in_Age)
+    {
+        Response4 = in_Age.ToString();
+    }
     public void SubmitData()
     {
         //Ages();
+
+
+
         Response1 = AvatarLabelsField.GetComponent<InputField>().text;
         Response2 = AvatarDescriptionField.GetComponent<InputField>().text;
-        Response3 = GenderField.GetComponent<InputField>().text;
-        Response4 = AgeField.GetComponent<InputField>().text;
-        Response5 = CountryField.GetComponent<InputField>().text;
-        Response6 = StateField.GetComponent<InputField>().text;
-        Response7 = CityField.GetComponent<InputField>().text;
 
-        StartCoroutine(Post(Response1, Response2, Response3, Response4, Response5, Response6, Response7));
+        StartCoroutine(Post(Response1, Response2, Response3, Response4, Response5));
     }
 
 
 
+
 }
+
