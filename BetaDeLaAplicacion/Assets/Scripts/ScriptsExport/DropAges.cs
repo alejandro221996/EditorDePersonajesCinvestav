@@ -9,7 +9,7 @@ public class DropAges : MonoBehaviour
 {
     enum Ages
     {
-        Elegir_Edad,
+        SelectAge,
         From_12_To_15,
         From_15_To_18,
         From_18_To_23,
@@ -25,10 +25,7 @@ public class DropAges : MonoBehaviour
 
     private string ResponseAge;
 
-    void Start()
-    {
-        PopulateList();
-    }
+
     public void Dropdown_IndexChanged(int index)
     {
         Ages name = (Ages)index;
@@ -44,7 +41,10 @@ public class DropAges : MonoBehaviour
             YearsSelected.color = Color.white;
         }
     }
-
+    void Start()
+    {
+        PopulateList();
+    }
     void PopulateList()
     {
         string[] enumNames = Enum.GetNames(typeof(Ages));

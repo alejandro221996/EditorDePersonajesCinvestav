@@ -8,7 +8,7 @@ public class DropDownAuto : MonoBehaviour
 {
     enum Countries
     {
-        Elegir_Pais,
+        SelectCountry,
         Afghanistan,
 
         Albania,

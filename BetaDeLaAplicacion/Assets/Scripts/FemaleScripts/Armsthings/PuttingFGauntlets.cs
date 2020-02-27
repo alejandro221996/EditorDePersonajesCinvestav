@@ -16,18 +16,19 @@ public class PuttingFGauntlets : MonoBehaviour
             case 1:
                 HideFGauntlet();
                 FGauntlet1.SetActive(true);
+                Debug.Log("Entro a la funcion 1");
 
 
                 break;
             case 2:
                 HideFGauntlet();
                 FGauntlet2.SetActive(true);
-
+                Debug.Log("Entro a la funcion 2");
                 break;
             case 3:
                 HideFGauntlet();
                 FGauntlet3.SetActive(true);
-
+                Debug.Log("Entro a la funcion 3");
                 break;
             default:
                 break;
